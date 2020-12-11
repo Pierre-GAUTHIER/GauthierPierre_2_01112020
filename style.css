@@ -22,3 +22,117 @@
     font-weight: normal;
     font-style: normal;
 }
+
+*
+  {
+    font-family: ralewayregular, arial, serif;
+    font-size:9px;
+  }
+
+h1
+  {
+    font-family: ralewaybold;
+    font-size: 9px;
+  }
+
+h2, .filtre li
+{
+  font-family: ralewaybold;
+  font-size: 7.5px;
+}
+
+p
+{
+  font-size: 6.5px;
+}
+
+
+
+/*Debut page RESERVIA*/
+
+body
+  /*Q1 : Pourquoi 2.5% de chaque côté et pas width=95%?*/
+  /*Q2 : Possible d'utiliser plutôt des unité em?*/
+  {
+    margin-left:  5px;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+.head
+  {
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+  }
+
+#rav /*Q3:IMPOSSIBLE de faire fonctionner avec une class*/
+  {
+    margin-top:20px;
+    
+    borde:1px solid blue;
+  }
+
+.logo_reservia
+  {
+    width:40px;
+  }
+
+
+.std
+  {
+    text-decoration:none;
+    color:black;
+  }
+
+.mainlink
+  {
+    color:#0065fc;
+    text-decoration:none;
+    font-family: ralewaybold;
+  }
+
+.navigation ul
+  {
+    display:flex;
+    justify-content:space-around;
+    padding: 0px 0 0 0;
+    margin: 0 10px 0 0;
+    width:300px;
+
+    borde:1px solid blue;
+  }
+
+.navigation li
+  {
+    list-style: none;
+    padding:20px 15px 0 15px;
+
+    borde:0.1em solid red;  /*bordure repère*/
+  }
+
+
+.navigation li a
+  {
+    position:relative;
+  }
+
+.navigation li a:after 
+  {
+    content: "";
+    border-top: 1px solid #0065fc;
+    width: 100%;
+
+    position: absolute;
+    top: -20px;
+    left: 0;
+    
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out 0s;
+  }
+
+
+  .navigation li a:hover:after {
+  transform: scaleX(1.5);
+}
