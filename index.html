@@ -2,34 +2,96 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="icon" type="image/png" sizes="385x180" href="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/logo/Reservia@3x.png?raw=true">
         <link rel="stylesheet" href="style.css" />
+        <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport'/>
+        <meta content="width=device-width" name="viewport"/>
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/a9a5c90c98.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-
-        <header class="head">
-
-          	<!-- LOGO / TITRE -->
-          	
-          	<div id="rav">
-            	<a href="#"><img src="images/logo/Reservia@3x.png" alt="logo_reservia"class="logo_reservia"/></a>
-            	<h1>Trouver votre hébergement pour des vancances de rêves</h1>
-            	<p>En plein centre ville ou en pleine nature</p>
-          	</div>
+        <!-- LOGO ET MENU NAVIGATION-->
+        <header class="header">
+            <!-- Logo -->
+            <div class="logo">
+              <a href="#"><img src="images/logo/Reservia@3x.png" alt="logo_reservia"class="logo_reservia"/></a>
+            </div>
   
-
-        	<!-- MENU NAVIGATION -->
-
+          <!-- Menu navigation -->
             <nav class="navigation">
-                <ul>
-                    <li><a href="#" class="std">Hébergements</a></li>
-                    <li><a href="#" class="std">Actvités</a></li>
-                    <li><a href="#" class="mainlink">S'inscrire</a></li>
-                </ul>
+              <div class="bLinkstd">
+                <li><a href="#" class="stdLink">H&eacutebergement</a></li>
+                <li><a href="#" class="stdLink">Actvit&eacutes</a></li>
+              </div>
+              <div class="bsingupLink">
+                <li><a href="#" class="singupLink">S&#039inscrire</a></li>
+              </div>
             </nav>
-
         </header>
 
+        <div class="linkmobile">
+           <li><a href="#" class="stdLink">H&eacutebergement</a></li>
+           <li><a href="#" class="stdLink">Actvit&eacutes</a></li>
+        </div>
+
+        <!-- TITRE PAGE -->
+        <div class="titrepage">
+          <h1 class="titre">Trouvez votre h&eacutebergement pour des vancances de r&ecircves</h1>
+          <p class="p-titre">En plein centre ville ou en pleine nature</p>
+        </div>
+
+<!-- ZONE DE RECHERCHE ET FILTRES-->
+        
+        <section class="search_filter">
+
+          <!-- Barre de recherche-->
+
+          <div class="searchbar">
+            <i class="fas fa-map-marker-alt"></i>
+            <label for="search" class="label"></label>
+            <input type="search" name="search" id="search" placeholder="Marseille, France"/>
+            <button class="btnsearch" type="button">Rechercher</button>
+          </div>
+
+          <div class="searchbarmobile">
+            <i class="fas fa-map-marker-alt"></i>
+            <label for="search" class="label"></label>
+            <input type="search" name="search" id="search" placeholder="Marseille, France"/>
+            <button class="btnsearch" type="button">R</button>
+          </div>
+
+          <!-- Filtres -->
+
+            <section class="filtre">
+                <h2>Filtres</h2>
+                  <div class="gbtns">
+                    <div class="btn">
+                        <i class="fas fa-money-bill-wave circle"></i>
+                        <button type="button" class="btn1">&Eacuteconomique</button>
+                    </div>
+
+                    <div class="btn">
+                        <i class="fas fa-child circle"></i>
+                        <button type="button" class="btn2">Familial</button>
+                    </div>
+
+                    <div class="btn">
+                        <i class="fas fa-heart circle"></i>
+                        <button type="button" class="btn3">Romantique</button>
+                    </div>
+
+                    <div class="btn">
+                        <i class="fas fa-dog circle"></i>
+                        <button type="button" class="btn4">Animaux autoris&eacutes</button>
+                    </div>
+                  </div>
+            </section>
+        </section>
+
+
     </body>
+
+
