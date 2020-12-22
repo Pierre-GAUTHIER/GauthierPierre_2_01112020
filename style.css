@@ -60,6 +60,27 @@ header .logo img
     cursor: pointer;
   }
 
+
+/*MENU NAVIGATION*/
+
+.navigation
+  {
+    display:flex;
+    justify-content:flex-end;
+    padding: 0;
+    margin: 20px 20px 0 0;
+  }
+
+.navigation li
+  {
+    list-style: none;
+  }
+
+  .navigation .stdLink
+  {
+    margin-right: 50px;
+  }
+
 .bLinkstd /*Bloc liens Hébergement + Activités*/
   {
     display: flex;
@@ -79,23 +100,6 @@ header .logo img
     font-weight: bold;
   }
 
-/*MENU NAVIGATION*/
-
-.navigation
-  {
-    display:flex;
-    justify-content:space-around;
-    width:30%;
-    padding: 0;
-    margin: 0 20px 0 0;
-  }
-
-.navigation li
-  {
-    list-style: none;
-    padding:20px 15px 0 15px;
-  }
-
 /*Animation liens menu navigation*/
 
 .navigation li a
@@ -112,7 +116,7 @@ header .logo img
   .navigation li a:after
   {
     content: "";
-    border-top: 1px solid #0065fc;
+    border-top: 2px solid #0065fc;
     width: 100%;
     position: absolute;
     top: -20px;
@@ -164,6 +168,11 @@ header .logo img
 
 
 /* BARRE DE RECHERCHE - (searchbar)*/
+
+.searchbarall
+{
+  display: flex;
+}
 
 .searchbar
   {
@@ -251,8 +260,11 @@ header .logo img
     justify-content: flex-start;
     align-items: center;
     margin: 0;
-    max-width: 400px;
     height: 40px;
+    border-width: 1px 0 1px 0;
+    border-radius: 0.8em;
+    border-color: #F2F2F2;
+    border-style: solid;
   }
 
 .searchbarmobile i
@@ -262,7 +274,6 @@ header .logo img
     align-items: center;
     background-color: #F2F2F2;
     justify-content: center;
-    border : 1px solid #F2F2F2;
     border-radius: 0.8rem 0 0 0.8rem;
     height: 100%;
     width:40px;
@@ -274,16 +285,18 @@ header .logo img
     font-weight: bold;
     text-align: left;
     height: 40px;
-    border-color: #F2F2F2;
-    border-width: 1px 0 1px 0;
-    border-style: solid;
     width:auto;
     padding-left: 2%;
+    border:none;
+    background-color: transparent;
   }
 
 .searchbarmobile button
  {
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     background-color: #0065fc;
     border-color: #0065fc;
@@ -291,12 +304,17 @@ header .logo img
     border-radius: 0.8em 0.8em 0.8em 0.8em;
     width: 45px;
     height: 40px;
-    font-size: 0.8em;
     cursor: pointer;
 
     transition:background 0.3s ease,box-shadow .3s ease;
     box-shadow:0 0 0 rgba(24,24,151,.4) inset,0 0 0 rgba(24,24,151,.8);
     outline-style:none;
+  }
+
+  .searchbarmobile button .fas
+ {
+    background-color: transparent;
+    border:none;
   }
 
 /* ZONE FILTRE*/
@@ -308,12 +326,12 @@ header .logo img
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    margin: 20px 0 0 0;
+    margin: 20px 0px 0 0px;
   }
 
   .filtre h2
   {
-    margin: 0 0 10px 0;
+    margin: 0 10px 10px 10px;
   }
 
 .gbtns
@@ -442,7 +460,7 @@ Note:pour les mobiles : @media all and (max-device-width: 480px)*/
     {
       justify-content: flex-end;
       align-items: flex-end;
-      margin: 0;
+      margin: 25px 25px 0 0;
     }
 
   header .logo img
@@ -456,6 +474,10 @@ Note:pour les mobiles : @media all and (max-device-width: 480px)*/
       padding-left:10px;
       padding-right: 10px;
     }
+    .gbtns
+     {
+      margin: 0 0 0 10px;
+     }
 
 /*Animation liens menu navigation*/
 
