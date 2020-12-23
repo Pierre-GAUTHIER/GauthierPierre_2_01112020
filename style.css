@@ -2,27 +2,23 @@
 - Doit-on utiliser les code pour les caractères spéciaux exemple : &eacute pour é?
  */
 
-
-
 /* CONFIG BODY */
 
 body
-{
-  max-width: 1440px;
-  margin:0 auto 0 auto;
-  border:1px solid black;
-  box-sizing: border-box;
-  font-size: 20px;
-}
-
-
+  {
+    max-width: 1440px;
+    margin:0 auto 0 auto;
+    border:1px solid black;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
 
 /*Config type et taille police princiaples*/
 h1{font-family:raleway, serif; font-size: 1em;}
 
 h2 {font-family:raleway, serif;font-size: 0.8em; font-weight: bold;}
 
-h3{font-family:raleway, serif;}
+h3{font-family:raleway, serif;font-size: 0.8em}
 
 p{font-family:raleway, serif;font-size: 0.8em;}
 
@@ -30,7 +26,7 @@ li{font-family:raleway, serif;font-size: 0.8em;font-weight:}
 
 div{font-family:raleway, serif;}
 
-                                /*HEADER*/
+/*HEADER*/
 
 /*CONFIG HEADER*/
 
@@ -42,12 +38,12 @@ div{font-family:raleway, serif;}
     margin: auto;
   }
                          
-/*LOGO MENU NAVIGATION*/
+/*Logo*/
 
 .logo
   {
     display: flex;
-    margin:10px 0 0 0;
+    margin:10px 0 0 10px;
   }
 
 header .logo img
@@ -61,7 +57,7 @@ header .logo img
   }
 
 
-/*MENU NAVIGATION*/
+/*Menu navigation*/
 
 .navigation
   {
@@ -156,6 +152,11 @@ header .logo img
 
 
 /*TITRE PAGE*/
+.titrepage
+  {
+    margin: 0 0 0 10px;
+  }
+
 .titre
   {
     margin: 20px 0 0 0;
@@ -167,12 +168,18 @@ header .logo img
   }
 
 
-/* BARRE DE RECHERCHE - (searchbar)*/
+/*BARRE DE RECHERCHE ET FILTRE*/
 
+.search_filter
+  {
+    margin: 0 0 0 10px;
+  }
+
+/*Barre de recherche- (searchbar)*/
 .searchbarall
-{
-  display: flex;
-}
+  {
+    display: flex;
+  }
 
 .searchbar
   {
@@ -249,7 +256,7 @@ header .logo img
     box-shadow:0 5px 0 black inset,0 1px 0 black;
  }
 
-/* BARRE DE RECHERCHE MOBILE - (searchbarmobile)*/
+/*BARRE DE RECHERCHE MOBILE - (searchbarmobile)*/
  
 .searchbarmobile
   {
@@ -317,7 +324,7 @@ header .logo img
     border:none;
   }
 
-/* ZONE FILTRE*/
+/*ZONE FILTRE*/
 
 .filtre
   {
@@ -331,10 +338,10 @@ header .logo img
 
   .filtre h2
   {
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 0px;
   }
 
-.gbtns
+.gbtns /*bloc boutons filtre*/
   {
     display: flex;
     justify-content: flex-start;
@@ -342,7 +349,7 @@ header .logo img
     margin: 0;
   }
 
-.filtre .btn
+.filtre .btn /*config boutons filtre individuel*/
   {
     box-sizing: border-box;
     mo-box-sizing: border-box;
@@ -352,7 +359,10 @@ header .logo img
     border-radius: 30px;
     margin : 0px 10px 10px 0px;
   }
-
+.filtre .btn :hover
+  {
+    cursor: pointer;
+  }
 
 .filtre .btn i
   {
@@ -382,6 +392,82 @@ header .logo img
     outline-style:none;
    }
 
+.filtre .info
+  {
+    display: flex;
+    align-items: center;
+  }
+.filtre .info .fas
+  {
+    border:1px solid #deebff;
+    font-size: 0.6em;
+    border-radius: 1.3em;
+    color: #0065fc;
+    margin:0 10px 0 0;
+    padding: 0.4em 0.7em 0.4em 0.7em;
+
+  }
+
+/*HEBERGEMENT MARSEILE ET POPULAIRE*/
+
+
+/*Marseille*/
+.marseille nav
+  {
+    display: flex;
+    width: 70%;
+    border:1px solid red;
+  }
+
+.marseille nav h3
+  {
+    margin: 0;
+  }
+
+.marseille nav p
+  {
+    margin: 5px 0 5px 0;
+  }
+
+.marseille nav .textimg
+  {
+    margin: 5px 0 5px 5px;
+  }
+.marseille nav li
+  {
+    list-style: none;
+  }
+
+.marseille nav li a
+  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    border:1px solid red;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.marseille .cropimg
+  {
+    position: relative;
+    width: 360px;
+    height: 140px;
+    overflow: hidden;
+    border: 1px red solid;
+  }
+
+.marseille nav li a img
+  {
+
+  }
+
+.marseille nav .img1 i
+  {
+    color:#0065fc;
+  }
+
 /*MEDIA QUERY HEADER 
 Note:pour les mobiles : @media all and (max-device-width: 480px)*/
 
@@ -408,7 +494,6 @@ Note:pour les mobiles : @media all and (max-device-width: 480px)*/
       width:30%;
     }
   }
-
 
 @media screen and (min-width: 768px) and (max-width: 992px)
   {
@@ -479,7 +564,7 @@ Note:pour les mobiles : @media all and (max-device-width: 480px)*/
       margin: 0 0 0 10px;
      }
 
-/*Animation liens menu navigation*/
+/*@media changement animation liens menu navigation*/
 
   .navigation li a:active 
     {
