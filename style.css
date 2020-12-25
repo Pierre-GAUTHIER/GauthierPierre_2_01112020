@@ -14,15 +14,15 @@ body
   }
 
 /*Config type et taille police princiaples*/
-h1{font-family:raleway, serif; font-size: 1em;}
+h1{font-family:raleway, serif; font-size: 0.8em;}
 
-h2 {font-family:raleway, serif;font-size: 0.8em; font-weight: bold;}
+h2 {font-family:raleway, serif;font-size: 0.6em; font-weight: bold;}
 
-h3{font-family:raleway, serif;font-size: 0.8em}
+h3{font-family:raleway, serif;font-size: 0.6em}
 
-p{font-family:raleway, serif;font-size: 0.8em;}
+p{font-family:raleway, serif;font-size: 0.6em;}
 
-li{font-family:raleway, serif;font-size: 0.8em;font-weight:}
+li{font-family:raleway, serif;font-size: 0.7em;font-weight:}
 
 div{font-family:raleway, serif;}
 
@@ -410,63 +410,296 @@ header .logo img
 
 /*HEBERGEMENT MARSEILE ET POPULAIRE*/
 
+.marsetpop
+  {
+    display: flex;
+    justify-content: space-between;
+    border : 3px solid red;
+  }
 
-/*Marseille*/
+/*PHOTOS marseille*/
+
+
+.marsetpop .marseille
+  {
+    display: flex;
+    justify-content: center;
+    border:1px solid yellow;
+    width: 65%;
+    background-color: #F2F2F2;
+  }
+
+.marseille .btitreetphoto
+  {
+    display: table-cell;
+    flex-direction: column;
+    border:1px solid red;
+    width: 90%;
+    align-items: center;
+    margin: 30px 0 0 0 ;
+  }
+
 .marseille nav
   {
     display: flex;
-    width: 70%;
-    border:1px solid red;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border:2px solid blue;
+    width:100%;
+  }
+
+.marseille h1
+  {
+    margin: 0 0 15px 0;
   }
 
 .marseille nav h3
   {
     margin: 0;
+    font-size: 0.7em;
   }
 
 .marseille nav p
   {
-    margin: 5px 0 5px 0;
+    margin: 3px 0 3px 0;
+    font-size: 0.7em;
   }
 
 .marseille nav .textimg
   {
     margin: 5px 0 5px 5px;
+    border:1px solid yellow;
   }
+
 .marseille nav li
   {
     list-style: none;
+    display: flex;
+    width: 30%;
+    margin-bottom: 15px;
   }
 
 .marseille nav li a
   {
     display: flex;
     flex-wrap: wrap;
-    width: 20%;
-    border:1px solid red;
+    border:3px solid white;
     text-decoration: none;
     margin: 0;
     padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    width: 100%;
   }
 
 .marseille .cropimg
   {
     position: relative;
-    width: 360px;
-    height: 140px;
+    width: 100%;
+    height: 70px;
     overflow: hidden;
     border: 1px red solid;
   }
 
+.marseille .cropimg .centre
+  {
+    position: absolute;
+    top: -20%;
+  }
+
 .marseille nav li a img
   {
-
+    width:100%;
+    height: ;
   }
 
-.marseille nav .img1 i
+.marseille nav .bstar
+  {
+    display: flex;
+    height: 100%;
+  }
+
+.marseille nav .image i
   {
     color:#0065fc;
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0;
   }
+
+.h2article
+  {
+    margin: 10px 0 20px 0;
+  }
+
+/*PHOTOS Populaires*/
+
+.pop
+  {
+    display: flex;
+    border:1px solid red;
+    justify-content: center;
+    width: 30%;
+    background-color: #F2F2F2;
+    border:2px solid green;
+  }
+
+.pop i
+  {
+    position: relative;
+  }
+
+.pop nav
+  {
+
+    border:2px solid blue;
+    width: 80%;
+    height: 90%;
+    margin: 30px 0 15px 0;
+  }
+
+.pop h1
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 0;
+  }
+
+.pop nav h3
+  {
+    margin: 0;
+    font-size: 0.7em;
+  }
+
+.pop nav p
+  {
+    margin: 3px 0 3px 0;
+    font-size: 0.7em;
+  }
+
+.pop nav .textimg
+  {
+    margin: 5px 10px 5px 10px;
+    border:1px solid yellow;
+    width: 58%;
+  }
+
+.pop nav li
+  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    margin: 10px 0 10px 0;
+  }
+
+.pop nav li a
+  {
+    display: flex;
+    width: 100%;
+    border:3px solid white;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+
+.pop .cropimg1
+  {
+    position: relative;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px red solid;
+  }
+
+.pop .cropimg1 .centrepop
+  {
+    position: absolute;
+    left: -32%;
+    top: -5%;
+  }
+
+.pop nav .cropimg1 img
+  {
+    width:170px;
+    height: auto;
+  }
+
+.pop .cropimg2
+  {
+    position: relative;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px red solid;
+  }
+
+.pop .cropimg2 .centrepop
+  {
+    position: absolute;
+    left: -20%;
+    top: -5%;
+  }
+
+.pop nav .cropimg2 img
+  {
+    width:145px;
+    height: auto;
+  }
+
+
+.pop .cropimg3
+  {
+    position: relative;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px red solid;
+  }
+
+.pop .cropimg3 .centrepop
+  {
+    position: absolute;
+    left: -8%;
+    top: -40%;
+  }
+
+.pop nav .cropimg3 img
+  {
+    width:110px;
+    height: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pop nav .bstar
+  {
+    display: flex;
+    height: 100%;
+  }
+
+.pop nav .image i
+  {
+    color:#0065fc;
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0;
+  }
+
 
 /*MEDIA QUERY HEADER 
 Note:pour les mobiles : @media all and (max-device-width: 480px)*/
