@@ -6,7 +6,6 @@
 
 body
   {
-    max-width: 1440px;
     margin:0 auto 0 auto;
     border:1px solid black;
     box-sizing: border-box;
@@ -330,9 +329,9 @@ header .logo img
   {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
     margin: 20px 0px 0 0px;
   }
 
@@ -341,6 +340,11 @@ header .logo img
     margin: 0 10px 10px 0px;
   }
 
+.titreetbtn
+  {
+    display: flex;
+    align-items: center;
+  }
 .gbtns /*bloc boutons filtre*/
   {
     display: flex;
@@ -358,11 +362,28 @@ header .logo img
     border: 2px solid #f2f2f2;
     border-radius: 30px;
     margin : 0px 10px 10px 0px;
+    height: 100%;
   }
+
+.filtre button
+  {
+    display: flex;
+    align-items: center;
+  }
+
+
 .filtre .btn :hover
   {
     cursor: pointer;
+    border-color: #0065fc;
+    box-shadow: 10px 5px 5px #0065fc;
   }
+
+.filtre .btn3:hover
+  {
+    background-color: yellow;
+  }
+
 
 .filtre .btn i
   {
@@ -376,19 +397,19 @@ header .logo img
     border:1px solid #deebff ;
   }
 
-  .filtre .fas
+.filtre .fas
    {
     justify-content: center;
    }
 
-  .filtre .btn button
+.filtre .btn button
    {
     font-family: raleway, serif;
     font-size: 0.8em;
     font-weight: bold;
     border-style: none;
     background-color: transparent;
-    padding: 0 15px 0 15px;
+    padding: 0 0px 0 0px;
     outline-style:none;
    }
 
@@ -443,11 +464,13 @@ header .logo img
   {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     border:2px solid blue;
     width:100%;
+    grid-gap: 5%;
+    grid-row-gap: 20px;  
   }
 
 .marseille h1
@@ -475,19 +498,21 @@ header .logo img
 
 .marseille nav li
   {
-    list-style: none;
     display: flex;
-    width: 30%;
-    margin-bottom: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 165px;
   }
 
 .marseille nav li a
   {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     border:3px solid white;
     text-decoration: none;
-    margin: 0;
+    margin:0 ;
     padding: 0;
     border-radius: 1em;
     overflow: hidden;
@@ -497,22 +522,22 @@ header .logo img
 .marseille .cropimg
   {
     position: relative;
-    width: 100%;
+    width: 165px;
     height: 80px;
     overflow: hidden;
     border: 1px red solid;
   }
 
+
 .marseille .cropimg .centre
   {
     position: absolute;
-    top: 0%;
   }
 
 .marseille nav li a img
   {
-    width:100%;
-    height: ;
+    width:auto;
+    height: 100%;
   }
 
 .marseille nav .bstar
@@ -592,7 +617,7 @@ header .logo img
     list-style: none;
     display: flex;
     justify-content: center;
-    height: 30%;
+    height: auto;
     margin: 10px 0 10px 0;
   }
 
@@ -610,8 +635,8 @@ header .logo img
 .pop .cropimg1
   {
     position: relative;
-    width: 55%;
-    height: 100%;
+    min-width: 110px;
+    height: 110px;
     overflow: hidden;
     border: 1px red solid;
   }
@@ -619,7 +644,7 @@ header .logo img
 .pop .cropimg1 .centrepop
   {
     position: absolute;
-    left: -32%;
+    left: -29%;
     top: -5%;
   }
 
@@ -632,8 +657,8 @@ header .logo img
 .pop .cropimg2
   {
     position: relative;
-    width: 55%;
-    height: 100%;
+    min-width: 110px;
+    height: 110px;
     overflow: hidden;
     border: 1px red solid;
   }
@@ -642,7 +667,7 @@ header .logo img
   {
     position: absolute;
     left: -20%;
-    top: -5%;
+    top: -0%;
   }
 
 .pop nav .cropimg2 img
@@ -655,8 +680,8 @@ header .logo img
 .pop .cropimg3
   {
     position: relative;
-    width: 55%;
-    height: 100%;
+    min-width: 110px;
+    height: 110px;
     overflow: hidden;
     border: 1px red solid;
   }
@@ -664,8 +689,8 @@ header .logo img
 .pop .cropimg3 .centrepop
   {
     position: absolute;
-    left: -8%;
-    top: -40%;
+    left: -0%;
+    top: -25%;
   }
 
 .pop nav .cropimg3 img
@@ -673,17 +698,6 @@ header .logo img
     width:110px;
     height: auto;
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .pop nav .bstar
@@ -704,11 +718,98 @@ header .logo img
 /*MEDIA QUERY HEADER 
 Note:pour les mobiles : @media all and (max-device-width: 480px)*/
 
+@media screen and (min-width: 1200px)
+  {
+
+  /*Augmentation police*/
+  h1{font-size: 1em;}
+
+  h2 {font-size: 0.8em;}
+
+  h3{font-size: 0.8em}
+
+  p{font-size: 0.8em;}
+
+  li{font-size: 0.9em;}
+
+  div{font-family:raleway, serif;}
+
+    .marseille .cropimg /*pour medi query sous 1050px */
+    {
+      width: 260px;
+      height: 125px;
+    }
+    .marseille nav li
+    {
+      width: 260px;
+    }
+
+    .pop .cropimg1
+     {
+       position: relative;
+       min-width: 200px;
+       height: 130px;
+       overflow: hidden;
+       border: 1px red solid;
+     }
+      .pop .cropimg1 .centrepop
+       {
+         position: absolute;
+         left: -0%;
+         top: -0%;
+       }
+      .pop nav .cropimg1 img
+       {
+         width:200px;
+         height: auto;
+       }
+
+    .pop .cropimg2
+     {
+       position: relative;
+       min-width: 200px;
+       height: 130px;
+       overflow: hidden;
+       border: 1px red solid;
+     }
+      .pop .cropimg2 .centrepop
+       {
+         position: absolute;
+         left: -0%;
+         top: -0%;
+       }
+      .pop nav .cropimg2 img
+       {
+         width:200px;
+         height: auto;
+       }
+
+    .pop .cropimg3
+     {
+       position: relative;
+       min-width: 200px;
+       height: 130px;
+       overflow: hidden;
+       border: 1px red solid;
+     }
+      .pop .cropimg3 .centrepop
+       {
+         position: absolute;
+         left: -0%;
+         top: -95%;
+       }
+      .pop nav .cropimg3 img
+       {
+         width:200px;
+         height: auto;
+       }
+  }
+
 @media screen and (min-width: 992px)
   {
     body
       {
-        max-width: 992px;
+        
         margin: auto;
       }
 
