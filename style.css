@@ -1,6 +1,14 @@
 /* QUESTIONS
 - Doit-on utiliser les code pour les caractères spéciaux exemple : &eacute pour é?
- */
+- Peut-on ajuster la largeur d'une div selon la largeur de son enfant?
+  (exemple : ajustement auto de la largeur du bloc .btitreetphoto 
+    à la largeur du bloc photo imgpop)
+-Peut-on utiliser les liens comme des div comme je l'ai fait pour 
+  que lien porte sur tout le contenu du cadre?
+- Doit-on spécifier font-weight:bold pour les titre qui s'affichent déjà en gras?
+-Peut-on dupliquer les icone (comme la commande background-repeat)?
+
+*/
 
 /* CONFIG BODY */
 
@@ -13,17 +21,17 @@ body
   }
 
 /*Config type et taille police princiaples*/
-h1{font-family:raleway, serif; font-size: 0.8em;}
+  h1{font-family:raleway, serif; font-size: 0.8em}
 
-h2 {font-family:raleway, serif;font-size: 0.6em; font-weight: bold;}
+  h2 {font-family:raleway, serif;font-size: 0.6em; font-weight: bold}
 
-h3{font-family:raleway, serif;font-size: 0.6em}
+  h3{font-family:raleway, serif;font-size: 0.8em}
 
-p{font-family:raleway, serif;font-size: 0.6em;}
+  p{font-family:raleway, serif;font-size: 0.6em}
 
-li{font-family:raleway, serif;font-size: 0.7em;font-weight:}
+  li{font-family:raleway, serif;font-size: 0.7em}
 
-div{font-family:raleway, serif;}
+  div{font-family:raleway, serif}
 
 /*HEADER*/
 
@@ -63,7 +71,7 @@ header .logo img
     display:flex;
     justify-content:flex-end;
     padding: 0;
-    margin: 20px 20px 0 0;
+    margin: 30px 20px 0 0;
   }
 
 .navigation li
@@ -337,13 +345,15 @@ header .logo img
 
   .filtre h2
   {
-    margin: 0 10px 10px 0px;
+    margin: 0 10px 0px 0px;
   }
 
 .titreetbtn
   {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
   }
 .gbtns /*bloc boutons filtre*/
   {
@@ -351,37 +361,40 @@ header .logo img
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;
+    gap : 10px;
   }
 
 .filtre .btn /*config boutons filtre individuel*/
   {
-    box-sizing: border-box;
-    mo-box-sizing: border-box;
-    webkit-box-sizing: border-box;
-    display: flex;
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    margin : 0px 10px 10px 0px;
-    height: 100%;
+    margin-bottom: 0px;
   }
 
-.filtre button
-  {
+.filtre .btn button
+   {
     display: flex;
     align-items: center;
-  }
+    justify-content: flex-start;
+    font-family: raleway, serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-style: none;
+    background-color: transparent;
+    outline-style:none;
+    padding: 0 10px 0 0px;
+    border: 2px solid #f2f2f2;
+    border-radius: 40px;
+    margin : 0px 0px 0px 0px;
+    height: 40px;
+   }
 
-
-.filtre .btn :hover
+.filtre button:hover
   {
-    cursor: pointer;
-    border-color: #0065fc;
-    box-shadow: 10px 5px 5px #0065fc;
-  }
+    height: 40px;
+    background-color:#F2F2F2;
+    border-radius: 30px;
+    color: #0065fc;
+    transform: rotate(-1deg)
 
-.filtre .btn3:hover
-  {
-    background-color: yellow;
   }
 
 
@@ -391,26 +404,17 @@ header .logo img
     align-items: center;
     background-color: #deebff;
     color: #0065fc;
-    height: 40px;
-    width:40px;
+    height: 35px;
+    width:35px;
     border-radius: 25px;
-    border:1px solid #deebff ;
+    border:1px solid #deebff;
+    margin: 0 10px 0 0;
+
   }
 
 .filtre .fas
    {
     justify-content: center;
-   }
-
-.filtre .btn button
-   {
-    font-family: raleway, serif;
-    font-size: 0.8em;
-    font-weight: bold;
-    border-style: none;
-    background-color: transparent;
-    padding: 0 0px 0 0px;
-    outline-style:none;
    }
 
 .filtre .info
@@ -435,39 +439,36 @@ header .logo img
   {
     display: flex;
     justify-content: space-between;
-    border : 3px solid red;
   }
 
 /*PHOTOS marseille*/
+/*NOTE: pour ces photos et afin de simplifier le code, les image 
+ ont été préalablement rogner à la bonne taille, chose qui n'a 
+ pas été faite pour la partie "Les plus populaire" (pour apprendre à recadrer en css)*/
 
 
 .marsetpop .marseille
   {
     display: flex;
     justify-content: center;
-    border:1px solid yellow;
     width: 65%;
     background-color: #F2F2F2;
+    border-radius: 1em;
   }
 
 .marseille .btitreetphoto
   {
-    display: table-cell;
-    flex-direction: column;
-    border:1px solid red;
+    display: table;
     width: 90%;
-    align-items: center;
-    margin: 30px 0 0 0 ;
+    margin-top: 30px;
   }
 
 .marseille nav
   {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    border:2px solid blue;
     width:100%;
     grid-gap: 5%;
     grid-row-gap: 20px;  
@@ -481,7 +482,6 @@ header .logo img
 .marseille nav h3
   {
     margin: 0;
-    font-size: 0.7em;
   }
 
 .marseille nav p
@@ -493,16 +493,13 @@ header .logo img
 .marseille nav .textimg
   {
     margin: 5px 0 5px 5px;
-    border:1px solid yellow;
   }
 
 .marseille nav li
   {
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 165px;
+    width: 169px;
   }
 
 .marseille nav li a
@@ -510,11 +507,12 @@ header .logo img
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border:3px solid white;
+    border:4px solid white;
+    background-color: white;
     text-decoration: none;
     margin:0 ;
     padding: 0;
-    border-radius: 1em;
+    border-radius: 1.1em;
     overflow: hidden;
     width: 100%;
   }
@@ -522,10 +520,9 @@ header .logo img
 .marseille .cropimg
   {
     position: relative;
-    width: 165px;
+    width: 170px;
     height: 80px;
     overflow: hidden;
-    border: 1px red solid;
   }
 
 
@@ -556,7 +553,7 @@ header .logo img
 
 .h2article
   {
-    margin: 10px 0 20px 0;
+    margin:30px 0 20px 0;
   }
 
 /*PHOTOS Populaires*/
@@ -564,11 +561,10 @@ header .logo img
 .pop
   {
     display: flex;
-    border:1px solid red;
     justify-content: center;
     width: 30%;
     background-color: #F2F2F2;
-    border:2px solid green;
+    border-radius: 1em;
   }
 
 .pop i
@@ -578,8 +574,6 @@ header .logo img
 
 .pop nav
   {
-
-    border:2px solid blue;
     width: 80%;
     height: 90%;
     margin: 30px 0 15px 0;
@@ -596,7 +590,7 @@ header .logo img
 .pop nav h3
   {
     margin: 0;
-    font-size: 0.7em;
+
   }
 
 .pop nav p
@@ -608,7 +602,6 @@ header .logo img
 .pop nav .textimg
   {
     margin: 5px 10px 5px 10px;
-    border:1px solid yellow;
     width: 58%;
   }
 
@@ -618,87 +611,83 @@ header .logo img
     display: flex;
     justify-content: center;
     height: auto;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 20px 0;
   }
 
 .pop nav li a
   {
     display: flex;
     width: 100%;
-    border:3px solid white;
+    border:4px solid white;
+    background-color: white;
     text-decoration: none;
     padding: 0;
     border-radius: 1em;
     overflow: hidden;
   }
 
-.pop .cropimg1
+.pop .cropimg1 /*Cadrage photo 1 populaire*/
   {
     position: relative;
-    min-width: 110px;
-    height: 110px;
+    min-width: 100px;
+    height: 100px;
     overflow: hidden;
-    border: 1px red solid;
   }
 
-.pop .cropimg1 .centrepop
-  {
-    position: absolute;
-    left: -29%;
-    top: -5%;
+  .pop .cropimg1 .centrepop
+    {
+      position: absolute;
+      left: -35%;
+      top: -5%;
+    }
+
+  .pop nav .cropimg1 img
+    {
+      width:170px;
+      height: auto;
   }
 
-.pop nav .cropimg1 img
-  {
-    width:170px;
-    height: auto;
-  }
-
-.pop .cropimg2
+.pop .cropimg2 /*Cadrage photo 1 populaire*/
   {
     position: relative;
-    min-width: 110px;
-    height: 110px;
+    min-width: 100px;
+    height: 100px;
     overflow: hidden;
-    border: 1px red solid;
   }
 
-.pop .cropimg2 .centrepop
-  {
-    position: absolute;
-    left: -20%;
-    top: -0%;
-  }
+  .pop .cropimg2 .centrepop
+    {
+      position: absolute;
+      left: -20%;
+      top: -0%;
+    }
 
-.pop nav .cropimg2 img
-  {
-    width:145px;
-    height: auto;
-  }
+  .pop nav .cropimg2 img
+    {
+      width:145px;
+      height: auto;
+    }
 
-
-.pop .cropimg3
+.pop .cropimg3 /*Cadrage photo 1 populaire*/
   {
     position: relative;
-    min-width: 110px;
-    height: 110px;
+    min-width: 100px;
+    height: 100px;
     overflow: hidden;
-    border: 1px red solid;
   }
 
-.pop .cropimg3 .centrepop
-  {
-    position: absolute;
-    left: -0%;
-    top: -25%;
-  }
+  .pop .cropimg3 .centrepop 
+    {
+      position: absolute;
+      left: -0%;
+      top: -38%;
+    }
 
-.pop nav .cropimg3 img
-  {
-    width:110px;
-    height: auto;
-  }
-
+  .pop nav .cropimg3 img
+    {
+      width:110px;
+      height: auto;
+    }
 
 .pop nav .bstar
   {
@@ -718,93 +707,108 @@ header .logo img
 /*MEDIA QUERY HEADER 
 Note:pour les mobiles : @media all and (max-device-width: 480px)*/
 
-@media screen and (min-width: 1200px)
-  {
+/*@media1 - Tèrs Grands écrans > 1580x*/
+  @media screen and (min-width: 1580px)
+   {
+      .marseille nav
+        {
+          justify-content:space-around;
+        }
+   }
 
-  /*Augmentation police*/
-  h1{font-size: 1em;}
+/*@media1 - Grands écrans > 1200px*/
+  @media screen and (min-width: 1200px)
+   {
+    /*Augmentation police*/
+    h1{font-size: 1em;}
 
-  h2 {font-size: 0.8em;}
+    h2 {font-size: 0.8em;}
 
-  h3{font-size: 0.8em}
+    h3{font-size: 0.8em}
 
-  p{font-size: 0.8em;}
+    p{font-size: 0.8em;}
 
-  li{font-size: 0.9em;}
+    li{font-size: 0.9em;}
 
-  div{font-family:raleway, serif;}
+    div{font-family:raleway, serif;}
+  /*Size-up et ajustement marge pour affichage esthétique Photos marseille*/
+      .marseille .cropimg
+        {
+          width: 228px;
+          height: 110px;
+        }
 
-    .marseille .cropimg /*pour medi query sous 1050px */
-    {
-      width: 260px;
-      height: 125px;
-    }
-    .marseille nav li
-    {
-      width: 260px;
-    }
+          .marseille nav
+          {
+            grid-gap:5px;
+            grid-row-gap: 20px;
+          }
 
-    .pop .cropimg1
-     {
-       position: relative;
-       min-width: 200px;
-       height: 130px;
-       overflow: hidden;
-       border: 1px red solid;
-     }
-      .pop .cropimg1 .centrepop
+          .marseille nav li
+          {
+            width: 228px;
+          }
+  /*Size-up Photos populaire*/
+      .pop .cropimg1
        {
-         position: absolute;
-         left: -0%;
-         top: -0%;
+         position: relative;
+         min-width: 200px;
+         height: 130px;
+         overflow: hidden;
        }
-      .pop nav .cropimg1 img
-       {
-         width:200px;
-         height: auto;
-       }
+        .pop .cropimg1 .centrepop
+         {
+           position: absolute;
+           left: -0%;
+           top: -0%;
+         }
+        .pop nav .cropimg1 img
+         {
+           width:200px;
+           height: auto;
+         }
 
-    .pop .cropimg2
-     {
-       position: relative;
-       min-width: 200px;
-       height: 130px;
-       overflow: hidden;
-       border: 1px red solid;
-     }
-      .pop .cropimg2 .centrepop
+      .pop .cropimg2
        {
-         position: absolute;
-         left: -0%;
-         top: -0%;
+         position: relative;
+         min-width: 200px;
+         height: 130px;
+         overflow: hidden;;
        }
-      .pop nav .cropimg2 img
-       {
-         width:200px;
-         height: auto;
-       }
+        .pop .cropimg2 .centrepop
+         {
+           position: absolute;
+           left: -0%;
+           top: -0%;
+         }
+        .pop nav .cropimg2 img
+         {
+           width:200px;
+           height: auto;
+         }
 
-    .pop .cropimg3
-     {
-       position: relative;
-       min-width: 200px;
-       height: 130px;
-       overflow: hidden;
-       border: 1px red solid;
-     }
-      .pop .cropimg3 .centrepop
+      .pop .cropimg3
        {
-         position: absolute;
-         left: -0%;
-         top: -95%;
+         position: relative;
+         min-width: 200px;
+         height: 130px;
+         overflow: hidden;
        }
-      .pop nav .cropimg3 img
-       {
-         width:200px;
-         height: auto;
-       }
-  }
+        .pop .cropimg3 .centrepop
+         {
+           position: absolute;
+           left: -0%;
+           top: -95%;
+         }
+        .pop nav .cropimg3 img
+         {
+           width:200px;
+           height: auto;
+         }
 
+  } /*Fin @media1*/
+
+/*@media2 - Ecrans PC min 992px*/
 @media screen and (min-width: 992px)
   {
     body
@@ -829,6 +833,7 @@ Note:pour les mobiles : @media all and (max-device-width: 480px)*/
     }
   }
 
+/*@media3 - Ecran tablettes entre 768 et 992px*/
 @media screen and (min-width: 768px) and (max-width: 992px)
   {
     body
@@ -850,68 +855,126 @@ Note:pour les mobiles : @media all and (max-device-width: 480px)*/
     {
       width:30%;
     }
+    .marseille nav
+    {
+      justify-content: space-around;
+    }
   }
 
-@media screen and (min-width: 0px) and (max-width: 768px)
-  {
-      body
+/*@media4 - Petits écrans (type mobile) < 768px*/
+  @media screen and (min-width: 0px) and (max-width: 768px)
     {
-      margin: auto;
-    }
-
-    .header
-    {
-      justify-content:space-between;
-      margin: 0 0px 0 20px;
-    }
-       
-  .bLinkstd
-    {
-     display: none;
-    }
-
-  .searchbar
+        body
       {
-       display: none;
+        margin: auto;
       }
 
-  .navigation
+      .header
+      {
+        justify-content:space-between;
+        margin: 0 0px 80px 20px;
+      }
+
+      .bLinkstd
+      {
+       position: absolute;
+       top : 80px;
+       left:50%;
+       margin-left: -100px
+      }
+        
+            .searchbarmobile
+            {
+              display: none;
+            }
+
+    .searchbar
+        {
+         display: none;
+        }
+
+
+
+    header .logo img
+      {
+        align-items: flex-end;
+        width: 100px;
+      }
+
+    .titrepage    
+      {
+        padding-right: 10px;
+      }
+      .gbtns
+       {
+        margin: 0 0 0 0px;
+       }
+
+    /*@media changement animation liens menu navigation*/
+
+    .navigation li a:active 
+      {
+      color: #0065fc;
+      }
+
+    .navigation li a:hover
+      {
+        display: none;
+      }
+
+    .navigation li a:after
+      {
+        display: none;
+      }
+      .marsetpop
+      {
+        display: flex;
+        flex-direction: column;
+      }
+      .marsetpop .marseille
+      {
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .marsetpop .marseille .btitreetphoto
+      {
+        display: flex;
+        flex-direction: column;
+
+      }
+      .marsetpop .marseille .btitreetphoto .imgpop
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pop
+      {
+        width: 100%;
+      }
+
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 500px)
     {
-      justify-content: flex-end;
-      align-items: flex-end;
-      margin: 25px 25px 0 0;
+    
+
     }
 
-  header .logo img
-    {
-      align-items: flex-end;
-      width: 100px;
-    }
+/*BORDURE REPERE*/
 
-  .titrepage    
-    {
-      padding-left:10px;
-      padding-right: 10px;
-    }
-    .gbtns
-     {
-      margin: 0 0 0 10px;
-     }
-
-/*@media changement animation liens menu navigation*/
-
-  .navigation li a:active 
-    {
-    color: #0065fc;
-    }
-
-  .navigation li a:hover
-    {
-      display: none;
-    }
-
-  .navigation li a:after
-    {
-      display: none;
-    }
-    {
+marsetpop{border : 3px solid red;}
+marsetpop .marseille{border:1px solid yellow;}
+marseille .btitreetphoto{border:1px solid red;}
+marseille nav{border:2px solid blue;}
+marseille nav .textimg{ border:1px solid yellow;}
+marseille cropimg{border: 1px red solid;}
+pop{border:2px solid green;}
+pop nav{border:2px solid blue;}
+pop nav .textimg{border:1px solid yellow;}
+pop cropimg1{border: 1px red solid;}
+pop cropimg2{border: 1px red solid;}
+pop cropimg3{border: 1px red solid;}
