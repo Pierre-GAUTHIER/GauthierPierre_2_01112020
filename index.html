@@ -17,17 +17,17 @@
         <header class="header">
             <!-- Logo -->
             <div class="logo">
-              <a href="#"><img src="images/logo/Reservia@3x.png" alt="logo_reservia"class="logo_reservia"/></a>
+              <a href=""><img src="images/logo/Reservia@3x.png" alt="logo_reservia"class="logo_reservia"/></a>
             </div>
   
           <!-- Menu navigation -->
             <nav class="navigation">
               <div class="bLinkstd">
-                <li><a href="#hebergement" class="stdLink">H&eacutebergements</a></li>
-                <li><a href="#activités" class="stdLink">Actvit&eacutes</a></li>
+                <li class="LiStdLink1"><a href="#hebergement" class="stdLink1">H&eacutebergements</a></li>
+                <li class="LiStdLink2"><a href="#activites" class="stdLink2">Activit&eacutes</a></li>
               </div>
               <div class="bsingupLink">
-                <li><a href="#" class="singupLink">S&#039inscrire</a></li>
+                <li><a href="" class="singupLink">S&#039inscrire</a></li>
               </div>
             </nav>
         </header>
@@ -43,29 +43,29 @@
 
           <!-- Barre de recherche-->
           <div class="searchbarall">
-            <div class="searchbar">
-              <i class="fas fa-map-marker-alt"></i>
-              <label for="search" class="label"></label>
-              <input type="search" name="search" id="search" placeholder="Marseille, France"/>
-              <button class="btnsearch" type="button">Rechercher</button>
-            </div>
 
-            <div class="searchbarmobile">
-              <i class="fas fa-map-marker-alt"></i>
-              <label for="search" class="label"></label>
-              <input type="search" name="search" id="search" placeholder="Marseille, France"/>
-              <button class="btnsearch" type="button"><i class="fas fa-search"></i></button>
-            </div>
-          </div>
+
+    <form class="searchbar" method="post">
+            <span class="spanicomap">
+              <i class="fas fa-map-marker-alt icomap"></i>
+            </span>
+            <input class="searchinput" type="search" placeholder="Marseille, France" size="1">
+            <button class="searchbutton">
+              <span class="searchspan">Rechercher</span>
+              <i class="icosearch fas fa-search"></i>
+            </button>
+    </form>
 
           <!-- Filtres -->
             <section class="filtre">
-              <div class="titreetbtn">
+              <div class="titrefiltre">
                 <h2>Filtres</h2>
                   <div class="gbtns">
+                    
                     <div class="btn">
-                        <button type="button" class="btn2"><i class="fas fa-money-bill-wave circle"></i>Familial</button>
+                        <button type="button" class="btn1"><i class="fas fa-money-bill-wave circle"></i>&Eacuteconomique</button>
                     </div>
+
                     <div class="btn">
                         <button type="button" class="btn2"><i class="fas fa-child circle"></i>Familial</button>
                     </div>
@@ -95,14 +95,13 @@
         <article class="marseille">
           <div class="btitreetphoto">
             <h1 id="hebergement">H&eacutebergements &agrave Marseille</h1>
-              <nav class="imgpop">
-                <li class="image">
-                    <a href="#">
-                      <div class="cropimg">
-                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg?raw=true" class="centre" />
-                      </div>
-                      <div class="textimg">
-                        <h3>Auberge la Cannebi&egravere</h3>
+              <div class="photosmarseille">
+
+                      <div class="hotels">
+                        <figure class="imghotel">
+                          <a href=""><img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/marcus-loke-WQJvWU_HZFo-unsplash.jpg?raw=true" class="centre"/></a>
+                        </figure>
+                        <figcaption>Auberge la Cannebi&egravere</figcaption>
                         <p>Nuit &agrave partir de <strong>25€</strong></p>
                           <div class="bstar">
                             <i class="fas fa-star"></i>
@@ -112,167 +111,238 @@
                             <i class="far fa-star"></i>
                           </div>
                       </div>
-                  </a>
-                </li>
-                <li class="image">
-                    <a href="#">
-                      <div class="cropimg">
-                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg?raw=true" class="centre" />
+
+                      <div class="hotels">
+                        <figure class="imghotel">
+                          <a href=""><img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/fred-kleber-gTbaxaVLvsg-unsplash.jpg?raw=true" class="centre" /></a>
+                        </figure>
+                        <figcaption>
+                        H&ocirctel du port
+                        </figcaption>
+                        <p class="photel">Nuit &agrave partir de 52€</p>
+                            <div class="bstar">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
                       </div>
-                      <div class="textimg">
-                        <h3>H&ocirctel du port</h3>
-                        <p>Nuit &agrave partir de <strong>52€</strong></p>
-                          <div class="bstar">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
+
+                      <div class="hotels">
+                        <figure class="imghotel">
+                          <a href=""><img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/reisetopia-B8WIgxA_PFU-unsplash.jpg?raw=true" class="centre" /></a>
+                        </figure>
+                        <figcaption>
+                        H&ocirctel Les mouettes
+                        </figcaption>
+                        <p class="photel">Nuit &agrave partir de 70€</p>
+                            <div class="bstar">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
                       </div>
-                  </a>
-                </li>
-                <li class="image">
-                    <a href="#">
-                      <div class="cropimg">
-                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg?raw=tru" class="centre" />
+
+                      <div class="hotels">
+                        <figure class="imghotel">
+                          <a href=""><img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/annie-spratt-Eg1qcIitAuA-unsplash.jpg?raw=true" class="centre" /></a>
+                        </figure>
+                        <figcaption>
+                        H&ocirctel de la mer
+                        </figcaption>
+                        <p class="photel">Nuit &agrave partir de 46€</p>
+                            <div class="bstar">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
                       </div>
-                      <div class="textimg">
-                        <h3>H&ocirctel des mouettes</h3>
-                        <p>Nuit &agrave partir de <strong>76€</strong></p>
-                          <div class="bstar">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
+
+                      <div class="hotels">
+                        <figure class="imghotel">
+                          <a href=""><img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/nicate-lee-kT-ZyaiwBe0-unsplash.jpg?raw=true" class="centre" /></a>
+                        </figure>
+                        <figcaption>
+                        Auberge Le panier
+                        </figcaption>
+                        <p class="photel">Nuit &agrave partir de <strong>23€</strong></p>
+                            <div class="bstar">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
                       </div>
-                  </a>
-                </li>
-                <li class="image">
-                    <a href="#">
-                      <div class="cropimg">
-                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg?raw=true" class="centre" />
+
+                      <div class="hotels">
+                        <figure class="imghotel">
+                          <a href=""><img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/febrian-zakaria-M6S1WvfW68A-unsplash.jpg?raw=true" class="centre"/></a>
+                        </figure>
+                            <figcaption>H&ocirctel chez Amina</figcaption>
+                            <p class="photel">Nuit &agrave partir de 96€</p>
+                            <div class="bstar">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
                       </div>
-                      <div class="textimg">
-                        <h3>H&ocirctel de la mer</h3>
-                        <p>Nuit &agrave partir de <strong>46€</strong></p>
-                          <div class="bstar">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class="image">
-                    <a href="#">
-                      <div class="cropimg">
-                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg?raw=true" class="centre" />
-                      </div>
-                      <div class="textimg">
-                        <h3>Auberge le panier</h3>
-                        <p>Nuit &agrave partir de <strong>23€</strong></p>
-                          <div class="bstar">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class="image">
-                    <a href="#">
-                      <div class="cropimg">
-                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg?raw=true" class="centre" />
-                      </div>
-                      <div class="textimg">
-                        <h3>H&ocirctel chez Amina</h3>
-                        <p>Nuit &agrave partir de <strong>96€</strong></p>
-                          <div class="bstar">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-              </nav>
-              <h2 class="h2article">Afficher plus</h2>
+              </div>
+            <h2 class="h2article">Afficher plus</h2>
           </div>
         </article>
 
-        <!-- populaire-->
+
+        <!-- marseille LES PLUS POPULAIRES-->
         <aside class="pop">
-            <nav class="imgmars">
-              <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>
-              <li class="image">
-                  <a href="#">
-                    <div class="cropimg1">
-                        <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg?raw=true"  class="centrepop" />
-                    </div>
-                    <div class="textimg">
-                      <h3>H&ocirctel le soleil du matin</h3>
-                      <p>Nuit &agrave partir de <strong>128€</strong></p>
-                        <div class="bstar">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
+          <div class="btitreetphotopop">
+            <h1 id="populaire">Les plus populaires</h1><span><i class="fas fa-chart-line"></i></span>
+              <div class="photospop">
+
+                      <div class="hotelspop">
+                        <figure class="imghotelpop">
+                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg?raw=true" class="centrepop"/>
+                        </figure>
+                        <div class="btextphotopop">
+                        <figcaption class="capimghotelpop">H&ocirctel Le soleil du matin</figcaption>
+                        <p class="photelpop">Nuit &agrave partir de 128€</p>
+                          <div class="bstarpop">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
                         </div>
-                    </div>
-                </a>
-              </li>
-              <li class="image">
-                  <a href="#">
-                    <div class="cropimg2">
-                        <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg?raw=true" class="centrepop"/>
-                    </div>
-                    <div class="textimg">
-                      <h3>Au coeur de l'eau Chambres d'h&ocirctes</h3>
-                      <p>Nuit &agrave partir de <strong>71€</strong></p>
-                        <div class="bstar">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
+                      </div>
+
+                      <div class="hotelspop">
+                        <figure class="imghotelpop">
+                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/aw-creative-VGs8z60yT2c-unsplash.jpg?raw=true" class="centrepop"/>
+                        </figure>
+                        <div class="btextphotopop">
+                        <figcaption class="capimghotelpop">Au coeur de l'eau Chambre d'h&ocirctes</figcaption>
+                        <p class="photelpop">Nuit &agrave partir de 71€</p>
+                          <div class="bstarpop">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
                         </div>
-                    </div>
-                </a>
-              </li>
-              <li class="image">
-                  <a href="#">
-                    <div class="cropimg3">
-                        <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg?raw=true" class="centrepop"/>
-                    </div>
-                    <div class="textimg">
-                      <h3>H&ocirctel Tout bleu et Blanc</h3>
-                      <p>Nuit &agrave partir de <strong>68€</strong></p>
-                        <div class="bstar">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
+                      </div>
+
+                      <div class="hotelspop">
+                        <figure class="imghotelpop">
+                          <img alt="Auberge la Cannebiere" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/4_smalloriginal/febrian-zakaria-sjvU0THccQA-unsplash.jpg?raw=true" class="centrepop"/>
+                        </figure>
+                        <div class="btextphotopop">
+                        <figcaption class="capimghotelpop">H&ocirctel Tout bleu et Blanc</figcaption>
+                        <p class="photelpop">Nuit &agrave partir de 68€</p>
+                          <div class="bstarpop">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
                         </div>
-                    </div>
-                </a>
-              </li>
-            </nav>
+                      </div>
+
+              </div>
+          </div>
         </aside>
       </section>
-      <section>
-        <h1 id="activités">Activit&eacutes à Marseille</h1>
+
+
+<!--ACTIVITES A AMARSIELLES-->
+
+      <section class="sectionactivitesMars" id="activites">
+        <h1 class="titreactivitesMars" >Activit&eacutes à Marseille</h1>
+          
+          <article class="blocphotosactvitesMars">
+
+            <div class=groupephoto>
+              <a class="blocphoto1" href="">
+                <div class="cadrephoto1">
+                  <img alt="Vieux Port" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg?raw=true" class="img1"/>
+                </div>
+                  <h3>Vieux Port</h3>
+              </a>
+            </div>
+                
+            <div class="groupephoto2">
+                <a class="blocphoto2" href="">
+                  <div class="cadrephoto2">
+                    <img alt="Vieux Port" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg?raw=true" class="img2"/>
+                  </div>  
+                    <h3>Fort de Pom&egravegues</h3>
+                </a>
+                
+                <a class="blocphoto3" href="">
+                  <div class="cadrephoto3">
+                    <img alt="Vieux Port" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg?raw=true" class="img3"/>
+                  </div> 
+                    <h3>&Icircles du Frioul</h3>
+                </a>
+            </div>
+                
+            <div class=groupephoto3>                
+                <a class="blocphoto4" href="">
+                  <div class="cadrephoto4">
+                    <img alt="Vieux Port" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg?raw=true" class="img4"/>
+                  </div>
+                    <h3>Parc National des Calanques</h3>
+                </a>
+            </div>
+              
+              <div class="groupephoto4">  
+                <a class="blocphoto5" href="">
+                  <div class="cadrephoto5">
+                    <img alt="Vieux Port" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg?raw=true" class="img5"/>
+                   </div>
+                    <h3>Notre-Dame-De-La-Garde</h3>
+                </a>
+                <a class="blocphoto6" href="">
+                  <div class="cadrephoto6">
+                    <img alt="Vieux Port" src="https://github.com/Pierre-GAUTHIER/projet2_reservia/blob/main/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg?raw=true" class="img6"/>
+                  </div>  
+                    <h3>Parc Longchamp</h3>
+                </a>
+              </div> 
+          </article>
       </section>
+
+        <!-- FOOTER -->
+  <footer class="footer">
+    <div class="bloc_footer">
+      <div class="bloc_a_propos">
+        <h3 class="titre_a_propos">A propos</h3>
+        <a href="#" class="link_fonction_site">Fonctionnement du site</a>
+        <a href="#" class="link_cgv">Conditions générales de vente</a>
+        <a href="#" class="link_confidentialite">Données et confidentialités</a>
+      </div>
+      <div class="bloc_nos_hebergements">
+        <h3 class="titre_nos_hebergements">Nos hébergement</h3>
+        <a href="#" class="link_charte">Charte qualité</a>
+        <a href="#" class="link_soumettre">Soumettre votre hotel</a>
+      </div>
+      <div class="bloc_assistance">
+        <h3 class="titre__assistance">Assitance</h3>
+        <a href="#" class="link_aide">Centre d'aide</a>
+        <a href="#" class="link_contacter">Nous contacter</a>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER -->
 
     </body>
 
