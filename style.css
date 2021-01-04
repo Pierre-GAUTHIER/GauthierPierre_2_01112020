@@ -28,19 +28,21 @@ body
   }
 
 /*Config type et taille police princiaples*/
-  h1{font-family:raleway, serif; font-size: 0.8em}
+  h1{font-family:raleway, serif; font-size: 1.4em}
 
   h2 {font-family:raleway, serif;font-size: 1em; font-weight: bold}
 
   h3{font-family:raleway, serif;font-size: 0.8em}
 
-  p{font-family:raleway, serif;font-size: 0.6em}
+  p{font-family:raleway, serif;font-size: 1em}
 
-  li{font-family:raleway, serif;font-size: 0.7em}
+  li{font-family:raleway, serif;font-size: 1em}
 
   div{font-family:raleway, serif}
 
   a{text-decoration:none; color: black}
+
+  figcaption{font-family:raleway, serif; font-size: 0.9em; font-weight:bold}
 
 /*HEADER*/
 
@@ -56,20 +58,16 @@ body
     margin: 0 60px 0 60px;
   }
                          
-/*Logo*/
-
 .logo
   {
     display: flex;
-    margin:10px 0 0 0px;
+    margin:25px 0 0 0;
   }
-
 header .logo img
   {
-    width:50%;
+    width:130px;
   }
-
-.logo_reservia hover:
+.logo_reservia:hover
   {
     cursor: pointer;
   }
@@ -82,7 +80,7 @@ header .logo img
     display:flex;
     justify-content:flex-end;
     padding: 0;
-    margin: 30px 0px 0 0;
+    margin: 40px 0 0 0;
   }
 
 .navigation li
@@ -101,7 +99,7 @@ header .logo img
     display: flex;
   }
 
-.stdLink1, .stdlink2 /*Liens "standard"*/
+.stdLink1, .stdlink2 /*Liens Hébergement + Activités*/
   {
     text-decoration:none;
     color:black;
@@ -116,37 +114,33 @@ header .logo img
   }
 
 /*Animation liens menu navigation*/
-
-.navigation li a
-  {
-    position:relative;
-  }
+  .navigation li a
+    {
+      position:relative;
+    }
 
   .navigation li a:hover
-  {
-    color: #0065fc;
-    cursor: pointer;
-  }
+    {
+      color: #0065fc;
+      cursor: pointer;
+    }
 
   .navigation li a:after
-  {
-    content: "";
-    border-top: 2px solid #0065fc;
-    width: 100%;
-    position: absolute;
-    top: -20px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.25s ease-in-out 0s;
-  }
+    {
+      content: "";
+      border-top: 3px solid #0065fc;
+      width: 100%;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform 0.25s ease-in-out 0s;
+    }
 
   .navigation li a:hover:after 
-  {
-    transform: scaleX(1.5);
-  }
-
-
-      /*SECTION RECHERCHE ET FILTRE*/
+    {
+      transform: scaleX(1.5);
+    }
 
 
 /*TITRE PAGE*/
@@ -154,21 +148,20 @@ header .logo img
   {
     display: flex;
     flex-direction: column;
-    margin: 0 60px 10px 60px;
+    margin: 40px 60px 20px 60px;
   }
 
 .titre
   {
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
   }
 
 .p-titre /*Paragraphe sous le titre*/
   {
-    margin: 5px 0 15px 0;
+    margin: 10px 0 0 0;
   }
 
-
-/*BARRE DE RECHERCHE ET FILTRE*/
+/*SECTION RECHERCHE ET FILTRE*/
 
 .search_filter
   {
@@ -177,84 +170,85 @@ header .logo img
 
 /*Barre de recherche- (searchbar)*/
 
+    .searchbar 
+      {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+      }
 
-.searchbar {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-}
+    .spanicomap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F2F2F2;
+      border-radius: 1em 0 0 1em;
+      height: 50px;
+      min-width: 50px;
+    }
 
-.spanicomap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F2F2F2;
-  border-radius: 1em 0 0 1em;
-  height: 50px;
-  min-width: 50px;
-}
+    .icomap {
+      margin-left: 0.1em;
+    }
 
-.icomap {
-  margin-left: 0.1em;
-}
+    .searchinput {
+      border-right: none;
+      border-left: none;
+      border-top: #F2F2F2 1px solid;
+      border-bottom: #F2F2F2 1px solid;
+      padding: 0 1.5em;
+      box-sizing: border-box;
+      width: 14em;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: "Raleway", "Sans serif";
+      height: 50px;
+    }
 
-.searchinput {
-  border-right: none;
-  border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
-  padding: 0 1.5em;
-  box-sizing: border-box;
-  width: 14em;
-  font-size: 1em;
-  font-weight: bold;
-  font-family: "Raleway", "Sans serif";
-  height: 50px;
-}
+    .searchinput::placeholder {
+      font-family: "Raleway", "Sans serif";
+      font-size: 1em;
+      color: #00000069;
+    }
 
-.searchinput::placeholder {
-  font-family: "Raleway", "Sans serif";
-  font-size: 1em;
-  color: #00000069;
-}
-
-.searchbutton {
-  background-color: #0065FC;
-  color: white;
-  border-style: none;
-  border-radius: 0 1em 1em 0;
-  padding: 0 1.5em;
-  font-family: "Raleway", "Sans serif";
-  font-size: 1em;
-  cursor: pointer;
-  height: 50px;
-}
+    .searchbutton {
+      background-color: #0065FC;
+      color: white;
+      border-style: none;
+      border-radius: 0 1em 1em 0;
+      padding: 0 1.5em;
+      font-family: "Raleway", "Sans serif";
+      font-size: 1em;
+      cursor: pointer;
+      height: 50px;
+    }
 
 
 /*ZONE FILTRE*/
 
-.filtre
+.filtre /*section filtre*/
   {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 20px 0px 0 0px;
+    margin: 30px 0 30px 0;
+    width: 100%;
   }
 
-  .filtre h2
+  .filtre .titre_filtre
   {
-    margin: 0 10px 0px 0px;
+    margin: 0 25px 0 0;
   }
 
-.titrefiltre
+.titreetfiltre /*bloc titre et boutons filtre*/
   {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:10px;
+    width: 100%;
   }
 
 .gbtns /*bloc boutons filtre*/
@@ -263,31 +257,32 @@ header .logo img
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;
-    gap : 10px;
+    gap : 20px;
   }
 
-.filtre .btn /*config boutons filtre individuel*/
+.filtre .btn
   {
-    margin-bottom: 0px;
+    margin:0;
+    display: flex;
   }
 
 .filtre .btn button
    {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     font-family: raleway, serif;
     font-size: 0.8em;
     font-weight: bold;
     border-style: none;
     background-color: transparent;
     outline-style:none;
-    padding: 0 10px 0 0px;
-    border: 2px solid #f2f2f2;
+    padding: 0 0px 0 0px;
+    border: 2.5px solid #f2f2f2;
     border-left: none;
     border-radius: 40px;
     margin : 0px 0px 0px 0px;
     height: 50px;
+
    }
 
 .filtre button:hover
@@ -299,7 +294,6 @@ header .logo img
     cursor: pointer;
   }
 
-
 .filtre .btn i
   {
     display: flex;
@@ -308,9 +302,15 @@ header .logo img
     color: #0065fc;
     height: 50px;
     width:50px;
+    min-width: 50px;
     border-radius: 25px;
-    margin: 0 10px 0 0;
+    font-size: 1.3em;
+  }
 
+  .filtre .btn button h2
+  {
+    margin: 0 10px 0 10px;
+    font-size: 1.2em;
   }
 
 .filtre .fas
@@ -322,12 +322,19 @@ header .logo img
   {
     display: flex;
     align-items: center;
+    margin: 30px 0 0 0;
   }
+
+  .filtre .info p
+  {
+    margin: 0 0 0 0;
+  }
+
 .filtre .info .fas
   {
     border:1px solid #deebff;
-    font-size: 0.6em;
-    border-radius: 1.3em;
+    font-size: 0.9em;
+    border-radius: 100%;
     color: #0065fc;
     margin:0 10px 0 0;
     padding: 0.4em 0.7em 0.4em 0.7em;
@@ -376,12 +383,9 @@ header .logo img
     display: flex;
     flex-wrap: wrap;
     gap:3%;
-    row-gap:20px;
-    
+    row-gap:25px;
     align-items: flex-start;
     justify-content: center;
-
-    rder:1px solid red;
   }
 
 .marseille .btitreetphoto .photosmarseille .hotels
@@ -396,6 +400,7 @@ header .logo img
     overflow: hidden;
     min-width: 250px;
     background-color: white;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0,.2);
   }
 
   .marseille .btitreetphoto .photosmarseille .hotels:hover
@@ -415,7 +420,6 @@ header .logo img
   .marseille .btitreetphoto .photosmarseille .hotels figcaption
     {
       margin-top: 10px;
-      font-size: 1.2em;
     }
   .marseille .btitreetphoto .photosmarseille .hotels figcaption,
   .marseille .btitreetphoto .photosmarseille .hotels p,
@@ -485,10 +489,7 @@ header .logo img
   {
     margin: 40px 0 25px 0;
   }
-.pop i
-  {
-    margin: 40px 0 25px 0;
-  }
+
 
 .pop .btitreetphotopop
   {
@@ -507,7 +508,7 @@ header .logo img
     display: flex;
     flex-wrap: wrap;
     gap:3%;
-    row-gap:0.5em;
+    row-gap:30px;
     align-items: center;
     justify-content: center;
 
@@ -529,6 +530,7 @@ header .logo img
     max-height: 172px;
     margin: auto;
     background-color: white;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0,.2);
   }
 
 .pop figure
@@ -601,6 +603,8 @@ header .logo img
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    grid-row-gap: 20px;
+
     rder:2px solid yellow;                 /*BOOOOOOOOOOOORDER REPERE*/
   }
 
@@ -619,6 +623,11 @@ header .logo img
     rder:2px solid red;                 /*BOOOOOOOOOOOORDER REPERE*/
   }
 
+.sectionactivitesMars article .groupephoto4 
+  {
+    grid-row-gap: 20px
+  }
+
 
 .sectionactivitesMars article .groupephoto .blocphoto1,
 .sectionactivitesMars article .groupephoto2 .blocphoto2,
@@ -630,7 +639,7 @@ header .logo img
 
     width: 100%;
     height: auto;  
-    box-shadow: 0px 10px 5px #F2F2F2;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0,.1);
     border-radius: 1em 1em 1em 1em;
     overflow: hidden;
 
@@ -811,65 +820,64 @@ font-size: 0.9em;
       {height: 100%;max-height:160px;}
    }
 
-   /*@media1 -intémedriare*/
-  @media screen and (max-width: 1200px)
-   {
 
-      .marsetpop
+@media screen and (min-width: 768px) and (max-width: 1200px)
+{
+
+  .pop .btitreetphotopop .photospop .hotelspop 
+  {
+      height: 50%;
+      max-height: none;
+      margin: auto;
+      flex-direction: column;
+  }
+
+      .pop figure 
+  {
+      min-width: auto;
+      max-width: none;
+      height: 150px;
+  }
+
+  .photospop .hotelspop .centrepop 
+    {
+      border-radius: 1em 1em 0 0;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px)
+  {
+    .sectionactivitesMars article .groupephoto4 
       {
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
+        width: 100%;
+        flex-direction: row;
+        column-gap: 20px;
       }
 
-      .marsetpop .marseille
+
+    .sectionactivitesMars article .groupephoto4 a .cadrephoto5,
+    .sectionactivitesMars article .groupephoto4 a .cadrephoto6
+    {
+  
+      height: 200px;
+    }
+
+    .sectionactivitesMars article 
       {
-        width: 70%;
-        background-color: transparent;
+        justify-content: space-around;
       }
+  }
 
-      .pop
-      {
-        width: 70%;
-        padding-bottom: 30px;
-      }
-   }
-
-
-
-/*@media1 - Grands écrans > 1200px*/
-  @media screen and (min-width: 1200px)
-   {
-    /*Augmentation police*/
-    h1{font-size: 1.2em;}
-
-    h2 {font-size: 1em;}
-
-    h3{font-size: 1em}
-
-    p{font-size: 1em;}
-
-    li{font-size: 1.1em;}
-
-    div{font-family:raleway, serif;}
-
-
-
-  } /*Fin @media1*/
 
 /*@media2 - Ecrans PC min 992px*/
 @media screen and (min-width: 992px)
   {
     body
       {
-        
         margin: auto;
       }
-
-    header .logo img
-    {
-      width:30%;
-    }
   }
 
 /*@media3 - Ecran tablettes entre 768 et 992px*/
@@ -905,13 +913,12 @@ font-size: 0.9em;
         body
       {
         margin: auto;
-
       }
 
       .header
       {
         justify-content:space-between;
-        margin: 0 20px 80px 20px;
+        margin: 0 20px 40px 20px;
       }
 
   .bLinkstd
@@ -924,8 +931,6 @@ font-size: 0.9em;
       position: absolute;
       top:80px;
       left:0px;
-
-      border:1px solid black;               /*BORDURE REPPPPPPERE*/
     }
 
   .bLinkstd .LiStdLink1
@@ -933,12 +938,14 @@ font-size: 0.9em;
       width: 50%;
       padding: 0;
       margin-right:0;
+      border-bottom: 2px solid #0065fc;
     }
   .bLinkstd .LiStdLink2
     {
       width: 50%;
       padding: 0;
       margin-right:0;
+      border-bottom: 2px solid #F2F2F2;
     }
 
   .bLinkstd .LiStdLink1 a,
@@ -1043,13 +1050,10 @@ font-size: 0.9em;
       .marsetpop .marseille .btitreetphoto
       {
         display: flex;
-        flex-direction: column;
+        fleection: column;
       }
 
-      .marseille .btitreetphoto .photosmarseille .hotels
-      {
-        width: auto;
-      }
+
 
       .photosmarseille .hotels .centre
       {
@@ -1280,11 +1284,37 @@ font-size: 0.9em;
 
 
 
-  @media screen and (min-width: 0px) and (max-width: 500px)
+@media screen and (min-width: 0px) and (max-width: 500px)
     {
     
+          .marseille .btitreetphoto .photosmarseille .hotels
+      {
+        width: 100%;
+      }
 
     }
+
+@media screen and (max-width: 1340px)
+{
+  .marseille .btitreetphoto .photosmarseille .hotels 
+  {
+      min-width: 200px;
+      width: 40%;
+}
+  }
+
+  .marseille .btitreetphoto .photosmarseille .hotels figure 
+  {
+    height: 9em;
+    min-width: 200px;
+  }
+
+}
+
+
+
+
+
 
 /*BORDURE REPERE*/
 
