@@ -289,7 +289,7 @@ header .logo img {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0 0 15px 0;
-  gap: 10px;
+  gap: 13px;
 }
 
 .filtre .btn {
@@ -354,12 +354,12 @@ header .logo img {
 }
 
 .filtre .info .fas {
-  border: 1px solid #deebff;
+  border: 1px solid #F2F2F2;
   font-size: 0.9em;
   border-radius: 100%;
   color: #0065fc;
   margin: 0 10px 0 0;
-  padding: 0.4em 0.7em 0.4em 0.7em;
+  padding: 5px 9px;
 
 }
 
@@ -510,8 +510,8 @@ header .logo img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 95%;
-  margin-bottom: 20px;
+  width: 100%;
+  margin:0px 20px 20px 20px;
 }
 
 .pop .btitreetphotopop .photospop {
@@ -559,7 +559,7 @@ header .logo img {
   min-height: 10em;
   object-fit: cover;
   width: 100%;
-  min-width: 170px;
+  min-width: 150px;
   height: 100%;
   border-radius: 1em 0 0 1em;
   margin: auto;
@@ -840,7 +840,7 @@ header .logo img {
   }
 
   h2 {
-    font-size: 0.8em;
+    font-size: 1.1rem;
   }
 
   .filtre .btn button h2 {
@@ -875,7 +875,27 @@ header .logo img {
   
 }
 
+/*@media écran intermédiaire - 769px à 922px*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .marsetpop {
+    flex-direction: column;
+  }
 
+  .marsetpop .marseille {
+    width: 100%;
+  }
+
+  .pop {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pop .btitreetphotopop .photospop{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+}
 
 /*@media2 - Ecrans PC min 992px*/
 @media screen and (min-width: 992px) {
@@ -914,7 +934,7 @@ header .logo img {
   }
 
   .titrepage {
-    margin: 90px 20px 20px 20px;
+    margin: 90px 20px 40px 20px;
   }
 
   .header {
@@ -937,14 +957,14 @@ header .logo img {
     width: 50%;
     padding: 0;
     margin-right: 0;
-    border-bottom: 3px solid #0065fc;
+    border-bottom: 2px solid #0065fc;
   }
 
   .bLinkstd .LiStdLink2 {
     width: 50%;
     padding: 0;
     margin-right: 0;
-    border-bottom: 3px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
   }
 
   .bLinkstd .LiStdLink1 a,
@@ -952,7 +972,7 @@ header .logo img {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
     font-size: 0.8em;
   }
 
@@ -1011,10 +1031,11 @@ header .logo img {
 
   .searchbutton {
     width: 50px;
+    border-radius: 0.7em;
   }
 
   .filtre .info {
-    align-items:flex-start;
+    align-items:baseline;
   }
 
   .filtre .info .fas {
@@ -1037,6 +1058,10 @@ header .logo img {
 
   .marsetpop .marseille .btitreetphoto {
     display: flex;
+  }
+
+  .pop .btitreetphotopop .photospop {
+    row-gap: 11px;
   }
 
   .photosmarseille .hotels .centre {
@@ -1176,7 +1201,7 @@ header .logo img {
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 561px) {
   .marseille .btitreetphoto .photosmarseille .hotels {
     width: 100%;
   }
