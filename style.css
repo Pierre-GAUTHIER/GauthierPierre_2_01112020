@@ -14,6 +14,9 @@ QUESTIONS RESTANTES
 -Peut-on dupliquer les icone (comme la commande background-repeat)?
 - FAIRE EN SORTE QUE LES PHOTOS SE REDUISE DES CHAQUE COTES PROPRTIONNELEMENT?
 
+-NOTES : les icones contenu dans les boutton sont comprimés dans la maquette mobile donnée
+, je n'ai pas souhaité reproduire cela car cela ne me paraît pas être un affichage cohérent
+
 */
 
 
@@ -53,6 +56,10 @@ li {
   font-family: raleway, serif;
   font-size: 1em
 }
+
+ .filtre .info p {
+   font-size: 0.8em;
+ }
 
 div {
   font-family: raleway, serif
@@ -263,7 +270,7 @@ header .logo img {
 }
 
 .filtre .titre_filtre {
-  margin: 0 25px 0 0;
+  margin: 0 25px 15px 0;
 }
 
 .titreetfiltre {
@@ -280,7 +287,7 @@ header .logo img {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
-  gap: 20px;
+  gap: 10px;
 }
 
 .filtre .btn {
@@ -824,6 +831,14 @@ header .logo img {
     text-shadow: 0.3px 0.3px 1px;
   }
 
+  h2 {
+    font-size: 0.8em;
+  }
+
+  .filtre .btn button h2 {
+    font-size: 1em;
+  }
+
   .titrepage p {
     font-size: 0.8em;
   }
@@ -959,7 +974,7 @@ header .logo img {
   }
 
   .search_filter {
-    margin: 0px 10px 0 10px;
+    margin: 0px 20px 0 20px;
   }
 
   .searchspan {
@@ -976,6 +991,14 @@ header .logo img {
 
   .searchbutton {
     width: 50px;
+  }
+
+  .filtre .info {
+    align-items:flex-start;
+  }
+
+  .filtre .info .fas {
+    font-size: 0.6em;
   }
 
   .marsetpop {
@@ -1050,8 +1073,6 @@ header .logo img {
   .pop .btitreetphotopop .photospop .hotelspop {
     box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, .05);
   }
-
-
 
 
   /*Reglage cardre photos activite Marseille*/
