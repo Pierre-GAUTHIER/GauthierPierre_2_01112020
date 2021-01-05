@@ -16,627 +16,607 @@ QUESTIONS RESTANTES
 
 */
 
+
 /* CONFIG BODY */
 
-body
-  {
-    margin:0 auto 0 auto;
-    border:1px solid black;
-    box-sizing: border-box;
-    font-size: 20px;
-    width: 100%;
-  }
+body {
+  margin: 0 auto 0 auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 20px;
+  width: 100%;
+}
 
 /*Config type et taille police princiaples*/
-  h1{font-family:raleway, serif; font-size: 1.4em}
+h1 {
+  font-family: raleway, serif;
+  font-size: 1.4em
+}
 
-  h2 {font-family:raleway, serif;font-size: 1em; font-weight: bold}
+h2 {
+  font-family: raleway, serif;
+  font-size: 1em;
+  font-weight: bold
+}
 
-  h3{font-family:raleway, serif;font-size: 0.8em}
+h3 {
+  font-family: raleway, serif;
+  font-size: 0.8em
+}
 
-  p{font-family:raleway, serif;font-size: 1em}
+p {
+  font-family: raleway, serif;
+  font-size: 1em
+}
 
-  li{font-family:raleway, serif;font-size: 1em}
+li {
+  font-family: raleway, serif;
+  font-size: 1em
+}
 
-  div{font-family:raleway, serif}
+div {
+  font-family: raleway, serif
+}
 
-  a{text-decoration:none; color: black}
+a {
+  text-decoration: none;
+  color: black
+}
 
-  figcaption{font-family:raleway, serif; font-size: 0.9em; font-weight:bold}
+figcaption {
+  font-family: raleway, serif;
+  font-size: 0.9em;
+  font-weight: bold
+}
 
 /*HEADER*/
 
 /*CONFIG HEADER*/
 
 
-.header
-  {
-    display:flex;
-    justify-content:space-between;
-    align-items: flex-start;
-    margin: auto;
-    margin: 0 60px 0 60px;
-  }
-                         
-.logo
-  {
-    display: flex;
-    margin:25px 0 0 0;
-  }
-header .logo img
-  {
-    width:130px;
-  }
-.logo_reservia:hover
-  {
-    cursor: pointer;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  margin: 0 60px 0 60px;
+}
+
+.logo {
+  display: flex;
+  margin: 25px 0 0 0;
+}
+
+header .logo img {
+  width: 130px;
+}
+
+.logo_reservia:hover {
+  cursor: pointer;
+}
 
 
 /*Menu navigation*/
 
-.navigation
-  {
-    display:flex;
-    justify-content:flex-end;
-    padding: 0;
-    margin: 40px 0 0 0;
-  }
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 40px 0 0 0;
+}
 
-.navigation li
-  {
-    list-style: none;
-  }
+.navigation li {
+  list-style: none;
+}
 
-  .navigation .stdLink1,
-  .navigation .stdLink2
-  {
-    margin-right: 50px;
-  }
+.navigation .stdLink1,
+.navigation .stdLink2 {
+  margin-right: 50px;
+}
 
 .bLinkstd /*Bloc liens Hébergement + Activités*/
   {
-    display: flex;
-  }
+  display: flex;
+}
 
-.stdLink1, .stdlink2 /*Liens Hébergement + Activités*/
-  {
-    text-decoration:none;
-    color:black;
-  }
 
-.singupLink /*Liens "s'inscrire"*/
+/*Liens Hébergement + Activités*/
   {
-    color:#0065fc;
-    text-decoration:none;
-    font-family: raleway;
-    font-weight: bold;
-  }
+  text-decoration: none;
+  color: black;
+}
+
+.singupLink
+
+/*Liens "s'inscrire"*/
+  {
+  color: #0065fc;
+  text-decoration: none;
+  font-family: raleway;
+  font-weight: bold;
+}
 
 /*Animation liens menu navigation*/
-  .navigation li a
-    {
-      position:relative;
-    }
+.navigation li a {
+  position: relative;
+}
 
-  .navigation li a:hover
-    {
-      color: #0065fc;
-      cursor: pointer;
-    }
+.navigation li a:hover {
+  color: #0065fc;
+  cursor: pointer;
+}
 
-  .navigation li a:after
-    {
-      content: "";
-      border-top: 3px solid #0065fc;
-      width: 100%;
-      position: absolute;
-      top: -40px;
-      left: 0;
-      transform: scaleX(0);
-      transition: transform 0.25s ease-in-out 0s;
-    }
+.navigation li a:after {
+  content: "";
+  border-top: 3px solid #0065fc;
+  width: 100%;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out 0s;
+}
 
-  .navigation li a:hover:after 
-    {
-      transform: scaleX(1.5);
-    }
+.navigation li a:hover:after {
+  transform: scaleX(1.5);
+}
 
 
 /*TITRE PAGE*/
-.titrepage
-  {
-    display: flex;
-    flex-direction: column;
-    margin: 40px 60px 20px 60px;
-  }
+.titrepage {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 60px 20px 60px;
+}
 
-.titre
-  {
-    margin: 0 0 0 0;
-  }
+.titre {
+  margin: 0 0 0 0;
+}
 
-.p-titre /*Paragraphe sous le titre*/
+.p-titre
+
+/*Paragraphe sous le titre*/
   {
-    margin: 10px 0 0 0;
-  }
+  margin: 12px 0 0 0;
+}
 
 /*SECTION RECHERCHE ET FILTRE*/
 
-.search_filter
-  {
-    margin: 0 60px 0 60px;
-  }
+.search_filter {
+  margin: 0 60px 0 60px;
+}
 
 /*Barre de recherche- (searchbar)*/
 
-    .searchbar 
-      {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 50px;
-      }
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
 
-    .spanicomap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #F2F2F2;
-      border-radius: 1em 0 0 1em;
-      height: 50px;
-      min-width: 50px;
-    }
+.spanicomap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
+  border-radius: 0.7em 0 0 0.7em;
+  height: 50px;
+  min-width: 50px;
+}
 
-    .icomap {
-      margin-left: 0.1em;
-    }
+.icomap {
+  margin-left: ;
+}
 
-    .searchinput {
-      border-right: none;
-      border-left: none;
-      border-top: #F2F2F2 1px solid;
-      border-bottom: #F2F2F2 1px solid;
-      padding: 0 1.5em;
-      box-sizing: border-box;
-      width: 14em;
-      font-size: 1em;
-      font-weight: bold;
-      font-family: "Raleway", "Sans serif";
-      height: 50px;
-    }
+.searchinput {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 220px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+  height: 50px;
+}
 
-    .searchinput::placeholder {
-      font-family: "Raleway", "Sans serif";
-      font-size: 1em;
-      color: #00000069;
-    }
+.searchinput::placeholder {
+  font-family: "Raleway", "Sans serif";
+  font-size: 1em;
+  color: #00000069;
+}
 
-    .searchbutton {
-      background-color: #0065FC;
-      color: white;
-      border-style: none;
-      border-radius: 0 1em 1em 0;
-      padding: 0 1.5em;
-      font-family: "Raleway", "Sans serif";
-      font-size: 1em;
-      cursor: pointer;
-      height: 50px;
-    }
+.searchbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0065FC;
+  color: white;
+  border-style: none;
+  border-radius: 0 0.7em 0.7em 0;
+  padding: 0 1.5em;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1em;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
 
 
 /*ZONE FILTRE*/
 
-.filtre /*section filtre*/
+.filtre
+
+/*section filtre*/
   {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 30px 0 30px 0;
-    width: 100%;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 30px 0 30px 0;
+  width: 100%;
+}
 
-  .filtre .titre_filtre
+.filtre .titre_filtre {
+  margin: 0 25px 0 0;
+}
+
+.titreetfiltre
+
+/*bloc titre et boutons filtre*/
   {
-    margin: 0 25px 0 0;
-  }
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-.titreetfiltre /*bloc titre et boutons filtre*/
+.gbtns
+
+/*bloc boutons filtre*/
   {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 20px;
+}
 
-.gbtns /*bloc boutons filtre*/
-  {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: 0;
-    gap : 20px;
-  }
+.filtre .btn {
+  margin: 0;
+  display: flex;
+}
 
-.filtre .btn
-  {
-    margin:0;
-    display: flex;
-  }
+.filtre .btn button {
+  display: flex;
+  align-items: center;
+  font-family: raleway, serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-style: none;
+  background-color: transparent;
+  outline-style: none;
+  padding: 0 0px 0 0px;
+  border: 2.5px solid #f2f2f2;
+  border-left: none;
+  border-radius: 40px;
+  margin: 0px 0px 0px 0px;
+  height: 50px;
+}
 
-.filtre .btn button
-   {
-    display: flex;
-    align-items: center;
-    font-family: raleway, serif;
-    font-size: 0.8em;
-    font-weight: bold;
-    border-style: none;
-    background-color: transparent;
-    outline-style:none;
-    padding: 0 0px 0 0px;
-    border: 2.5px solid #f2f2f2;
-    border-left: none;
-    border-radius: 40px;
-    margin : 0px 0px 0px 0px;
-    height: 50px;
+.filtre button:hover {
 
-   }
+  background-color: #F2F2F2;
+  color: #0065fc;
+  transform: scale(1.02);
+  cursor: pointer;
+}
 
-.filtre button:hover
-  {
+.filtre .btn i {
+  display: flex;
+  align-items: center;
+  background-color: #deebff;
+  color: #0065fc;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  border-radius: 25px;
+  font-size: 1.3em;
+}
 
-    background-color:#F2F2F2;
-    color: #0065fc;
-    transform: scale(1.02);
-    cursor: pointer;
-  }
+.filtre .btn button h2 {
+  margin: 0 10px 0 10px;
+  font-size: 1.2em;
+}
 
-.filtre .btn i
-  {
-    display: flex;
-    align-items: center;
-    background-color: #deebff;
-    color: #0065fc;
-    height: 50px;
-    width:50px;
-    min-width: 50px;
-    border-radius: 25px;
-    font-size: 1.3em;
-  }
+.filtre .fas {
+  justify-content: center;
+}
 
-  .filtre .btn button h2
-  {
-    margin: 0 10px 0 10px;
-    font-size: 1.2em;
-  }
+.filtre .info {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
 
-.filtre .fas
-   {
-    justify-content: center;
-   }
+.filtre .info p {
+  margin: 0 0 0 0;
+}
 
-.filtre .info
-  {
-    display: flex;
-    align-items: center;
-    margin: 30px 0 0 0;
-  }
+.filtre .info .fas {
+  border: 1px solid #deebff;
+  font-size: 0.9em;
+  border-radius: 100%;
+  color: #0065fc;
+  margin: 0 10px 0 0;
+  padding: 0.4em 0.7em 0.4em 0.7em;
 
-  .filtre .info p
-  {
-    margin: 0 0 0 0;
-  }
-
-.filtre .info .fas
-  {
-    border:1px solid #deebff;
-    font-size: 0.9em;
-    border-radius: 100%;
-    color: #0065fc;
-    margin:0 10px 0 0;
-    padding: 0.4em 0.7em 0.4em 0.7em;
-
-  }
+}
 
 /*HEBERGEMENT MARSEILE ET POPULAIRE*/
 
-.marsetpop
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:0 40px 30px 40px;
-  }
+.marsetpop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 40px 30px 40px;
+}
 
 /*PHOTOS marseille*/
 
-.marseille
-  {
-    display: flex;
-    justify-content: center;
-    width:68%;
-    background-color: #F2F2F2;
-    border-radius: 1em;
+.marseille {
+  display: flex;
+  justify-content: center;
+  width: 68%;
+  background-color: #F2F2F2;
+  border-radius: 1em;
+}
 
-    bder:1px solid red;
-  }
+.marseille h1 {
+  margin: 40px 0 20px 0;
+}
 
-.marseille h1
-  {
-    margin: 40px 0 20px 0;
-  }
+.marseille h2 {
+  margin: 35px 0 40px 0;
+}
 
-.marseille .btitreetphoto
-  {
-    display: flex;
-    flex-direction: column;
-    width:95%;
+.marseille .btitreetphoto {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
 
-    bder:1px solid red;
-  }
+.marseille .btitreetphoto .photosmarseille {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  row-gap: 25px;
+  align-items: flex-start;
+  justify-content: center;
+}
 
-.marseille .btitreetphoto .photosmarseille
-  {
-    display: flex;
-    flex-wrap: wrap;
-    gap:3%;
-    row-gap:25px;
-    align-items: flex-start;
-    justify-content: center;
-  }
+.marseille .btitreetphoto .photosmarseille .hotels {
+  width: 28%;
+  border: 4px solid white;
+  border-radius: 1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-style: raleway, serif;
+  padding: 0;
+  overflow: hidden;
+  min-width: 250px;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
+}
 
-.marseille .btitreetphoto .photosmarseille .hotels
-  {
-    width:28%;
-    border:4px solid white;
-    border-radius: 1em;
-    font-size: 0.8em;
-    font-weight: bold;
-    font-style: raleway, serif;
-    padding: 0;
-    overflow: hidden;
-    min-width: 250px;
-    background-color: white;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0,.2);
-  }
+.marseille .btitreetphoto .photosmarseille .hotels:hover {
+  transform: scale(1.2);
+}
 
-  .marseille .btitreetphoto .photosmarseille .hotels:hover
-  {
-    transform: scale(1.2);
-  }
-
-.marseille .btitreetphoto .photosmarseille .hotels figure
-  {
-    width: 100%;
-    height: 9em;
-    min-width: 250px;
-    margin: 0;
-  }
+.marseille .btitreetphoto .photosmarseille .hotels figure {
+  width: 100%;
+  height: 9em;
+  min-width: 250px;
+  margin: 0;
+}
 
 /*Positionnement texte dans bloc photo Marseille*/
-  .marseille .btitreetphoto .photosmarseille .hotels figcaption
-    {
-      margin-top: 10px;
-    }
-  .marseille .btitreetphoto .photosmarseille .hotels figcaption,
-  .marseille .btitreetphoto .photosmarseille .hotels p,
-  .marseille .btitreetphoto .photosmarseille .hotels .bstar
-    {
-      margin-left: 10px;
-      margin-bottom: 7px; 
-    }
-  .marseille .btitreetphoto .photosmarseille .hotels p
-   {
-    margin-top: 0;
-    font-weight: normal;
-    font-size: 1em;
-   }
+.marseille .btitreetphoto .photosmarseille .hotels figcaption {
+  margin-top: 10px;
+}
+
+.marseille .btitreetphoto .photosmarseille .hotels figcaption,
+.marseille .btitreetphoto .photosmarseille .hotels p,
+.marseille .btitreetphoto .photosmarseille .hotels .bstar {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.marseille .btitreetphoto .photosmarseille .hotels p {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 0.8em;
+}
 
 
-.photosmarseille .hotels .centre
-  {
-    position: relative;
-    height: 9em;
-    object-fit: cover;
-    width: 100%;
-    min-width: 260px;
-    border-radius: 1em 1em 0 0;
-    margin: auto;
-  }
+.photosmarseille .hotels .centre {
+  position: relative;
+  height: 9em;
+  object-fit: cover;
+  width: 100%;
+  min-width: 260px;
+  border-radius: 1em 1em 0 0;
+  margin: auto;
+}
 
 
 
-.photosmarseille .capimghotel
-  {
-    margin:0.4em 0 0 0.7em;
-    padding: 0;
-  }
+.photosmarseille .capimghotel {
+  margin: 0.4em 0 0 0.7em;
+  padding: 0;
+}
 
-.marseille span
-  {
-    font-weight: normal;
-    font-size: 0.9em;
-    margin: 0.2em 0 0 0.7em;
-    padding: 0;
-  }
+.marseille span {
+  font-weight: normal;
+  font-size: 0.9em;
+  margin: 0.2em 0 0 0.7em;
+  padding: 0;
+}
 
-.marseille .bstar
-  {
-    color:#0065fc;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0em 0 0.7em 0.7em;
-  }
+.marseille .bstar {
+  color: #0065fc;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0em 0 0.7em 0.7em;
+}
 
 /*PHOTOS Populaires*/
 
-.pop
-  {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width:30%;
-    background-color: #F2F2F2;
-    border-radius: 1em;
+.pop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30%;
+  background-color: #F2F2F2;
+  border-radius: 1em;
+}
 
-    boer:1px solid red;
-  }
+.pop h1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 40px 0 25px 0;
+}
 
-.pop h1
-  {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: 40px 0 25px 0;
-  }
-
-  .pop h1 span
-  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.pop h1 span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
-.pop .btitreetphotopop
-  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width:95%;
-    margin-bottom: 20px;
+.pop .btitreetphotopop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-bottom: 20px;
+}
 
-    bder:1px solid red;
-  }
+.pop .btitreetphotopop .photospop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
 
-.pop .btitreetphotopop .photospop
-  {
-    display: flex;
-    flex-wrap: wrap;
-    gap:3%;
-    row-gap:30px;
-    align-items: center;
-    justify-content: center;
+.pop .btitreetphotopop .photospop .hotelspop {
+  display: inline-flex;
+  border: 4px solid white;
+  border-radius: 1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-style: raleway, serif;
+  padding: 0;
+  overflow: hidden;
+  height: 25%;
+  max-height: 172px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
+}
 
-    bder:1px solid red;
-  }
+.pop figure {
+  min-width: 50%;
+  max-width: 50%;
+  margin: 0;
+  display: block;
+}
 
-.pop .btitreetphotopop .photospop .hotelspop
-  {
-    display: inline-flex;
-    border:4px solid white;
-    border-radius: 1em;
-    font-size: 0.8em;
-    font-weight: bold;
-    font-style: raleway, serif;
-    padding: 0;
-    overflow: hidden;
-    mn-wdth: 320px;
-    height: 25%;
-    max-height: 172px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0,.2);
-  }
 
-.pop figure
-  {
-    min-width: 50%;
-    max-width: 50%;
-    margin: 0;
-    display: block;
-  }
+.photospop .hotelspop .centrepop {
+  min-height: 10em;
+  object-fit: cover;
+  width: 100%;
+  min-width: 170px;
+  height: 100%;
+  border-radius: 1em 0 0 1em;
+  margin: auto;
+  display: block;
+}
 
-.photospop .hotelspop .centrepop
-  {
-    min-height: 10em;
-    object-fit: cover;
-    width: 100%;
-    min-width: 170px;
-    height: 100%;
-    border-radius: 1em 0 0 1em;
-    margin: auto;
-    display: block;
-  }
+.photospop .capimghotelpop {
+  margin: 0.4em 0 0 0.7em;
+  padding: 0;
+}
 
-.photospop .capimghotelpop
-  {
-    margin:0.4em 0 0 0.7em;
-    padding: 0;
-  }
+.pop p {
+  font-weight: normal;
+  font-size: 0.9em;
+  margin: 0.2em 0 0 0.7em;
+  padding: 0;
+}
 
-.pop p
-  {
-    font-weight: normal;
-    font-size: 0.9em;
-    margin: 0.2em 0 0 0.7em;
-    padding: 0;
-  }
+.pop .bstarpop {
+  color: #0065fc;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0.5em 0 0.7em 0.7em;
+}
 
-.pop .bstarpop
-  {
-    color:#0065fc;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0.5em 0 0.7em 0.7em;
-  }
-
-  .btextphotopop
-  {
-    margin: 0.5em 0 0 0.5em;
-  }
+.btextphotopop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5em 0 0 0.5em;
+}
 
 
 /*ACTIVITES A MARSEILLE*/
 
-.sectionactivitesMars
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0 40px 30px 40px;
-  }
+.sectionactivitesMars {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 40px 30px 40px;
+}
 
-.sectionactivitesMars h1
-  {
-    margin: 50px 0 20px 0;
-  }
+.sectionactivitesMars h1 {
+  margin: 50px 0 20px 0;
+}
 
-.sectionactivitesMars article
-  {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    grid-row-gap: 20px;
-
-    rder:2px solid yellow;                 /*BOOOOOOOOOOOORDER REPERE*/
-  }
+.sectionactivitesMars article {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  grid-row-gap: 20px;
+}
 
 
 .sectionactivitesMars article .groupephoto,
 .sectionactivitesMars article .groupephoto2,
 .sectionactivitesMars article .groupephoto3,
-.sectionactivitesMars article .groupephoto4
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 22%;
-    min-width: 270px;
+.sectionactivitesMars article .groupephoto4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22%;
+  min-width: 270px;
+}
 
-    rder:2px solid red;                 /*BOOOOOOOOOOOORDER REPERE*/
-  }
-
-.sectionactivitesMars article .groupephoto4 
-  {
-    grid-row-gap: 20px
-  }
+.sectionactivitesMars article .groupephoto4 {
+  grid-row-gap: 20px
+}
 
 
 .sectionactivitesMars article .groupephoto .blocphoto1,
@@ -644,70 +624,59 @@ header .logo img
 .sectionactivitesMars article .groupephoto2 .blocphoto3,
 .sectionactivitesMars article .groupephoto3 .blocphoto4,
 .sectionactivitesMars article .groupephoto4 .blocphoto5,
-.sectionactivitesMars article .groupephoto4 .blocphoto6
-{
-
-    width: 100%;
-    height: auto;  
-    box-shadow: 0px 5px 15px rgba(0, 0, 0,.1);
-    border-radius: 1em 1em 1em 1em;
-    overflow: hidden;
-
-    rder:4px solid blue;            /*BOOOOOOOOOOOORDER REPERE*/
-  }
+.sectionactivitesMars article .groupephoto4 .blocphoto6 {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+  border-radius: 1em 1em 1em 1em;
+  overflow: hidden;
+}
 
 .sectionactivitesMars article .groupephoto .blocphoto1 h3,
 .sectionactivitesMars article .groupephoto2 .blocphoto2 h3,
 .sectionactivitesMars article .groupephoto2 .blocphoto3 h3,
 .sectionactivitesMars article .groupephoto3 .blocphoto4 h3,
 .sectionactivitesMars article .groupephoto4 .blocphoto5 h3,
-.sectionactivitesMars article .groupephoto4 .blocphoto6 h3
-  {
-    padding-left: 10px;
-  }
+.sectionactivitesMars article .groupephoto4 .blocphoto6 h3 {
+  padding-left: 10px;
+}
 
 
-.sectionactivitesMars article .groupephoto a .cadrephoto1
-  {
-    width: 100%;
-    height: 395px;
-    overflow: hidden;
-  }
+.sectionactivitesMars article .groupephoto a .cadrephoto1 {
+  width: 100%;
+  height: 395px;
+  overflow: hidden;
+}
 
-.sectionactivitesMars article .groupephoto2 a .cadrephoto2
-  {
-    width: 100%;
-    height: 180px;
-    overflow: hidden;
-  }
+.sectionactivitesMars article .groupephoto2 a .cadrephoto2 {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
 
-.sectionactivitesMars article .groupephoto2 a .cadrephoto3
-  {
-    width: 100%;
-    height: 110px;e;
-    overflow: hidden;
-  }
+.sectionactivitesMars article .groupephoto2 a .cadrephoto3 {
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+}
 
-.sectionactivitesMars article .groupephoto3 a .cadrephoto4
-  {
-    width: 100%;
-    height: 395px;
-    overflow: hidden;
-  }
+.sectionactivitesMars article .groupephoto3 a .cadrephoto4 {
+  width: 100%;
+  height: 395px;
+  overflow: hidden;
+}
 
-.sectionactivitesMars article .groupephoto4 a .cadrephoto5
-  {
-    width: 100%;
-    height: 140px;
-    overflow: hidden;
-  }
+.sectionactivitesMars article .groupephoto4 a .cadrephoto5 {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
 
-.sectionactivitesMars article .groupephoto4 a .cadrephoto6
-  {
-    width: 100%;
-    height: 145px;
-    overflow: hidden;
-  }
+.sectionactivitesMars article .groupephoto4 a .cadrephoto6 {
+  width: 100%;
+  height: 145px;
+  overflow: hidden;
+}
 
 
 .sectionactivitesMars article .groupephoto a .cadrephoto1 img,
@@ -715,61 +684,50 @@ header .logo img
 .sectionactivitesMars article .groupephoto2 a .cadrephoto3 img,
 .sectionactivitesMars article .groupephoto3 img,
 .sectionactivitesMars article .groupephoto4 .blocphoto5 .cadrephoto5 img,
-.sectionactivitesMars article .groupephoto4 a .cadrephoto6 img
-  
-  {
-    position: relative;
-    object-fit: cover;
-  }
+.sectionactivitesMars article .groupephoto4 a .cadrephoto6 img {
+  position: relative;
+  object-fit: cover;
+}
 
 
-.sectionactivitesMars article .groupephoto a .cadrephoto1 img
-  {
-    left: -55%;
-    top:-0%;
-    height: 460px ;
-  }
+.sectionactivitesMars article .groupephoto a .cadrephoto1 img {
+  left: -55%;
+  top: -0%;
+  height: 460px;
+}
 
-.sectionactivitesMars article .groupephoto2 a .cadrephoto2 img
-  {
-    left: -0%;
-    top:-85%;
-    width: 100%;
-  }
+.sectionactivitesMars article .groupephoto2 a .cadrephoto2 img {
+  left: -0%;
+  top: -85%;
+  width: 100%;
+}
 
-.sectionactivitesMars article .groupephoto2 a .cadrephoto3 img
-  {
-    left: -0%;
-    top:-30%;
-    width: 100%;
-  }
+.sectionactivitesMars article .groupephoto2 a .cadrephoto3 img {
+  left: -0%;
+  top: -30%;
+  width: 100%;
+}
 
-.sectionactivitesMars article .groupephoto3 a .cadrephoto4 img
-  {
-    left: -35%;
-    top:-%;
-    height: 100%;
-  }
+.sectionactivitesMars article .groupephoto3 a .cadrephoto4 img {
+  left: -35%;
+  top: -0%;
+  height: 100%;
+}
 
-.sectionactivitesMars article .groupephoto4 a .cadrephoto5 img
-  {
-    left: -%;
-    top:-%;
-    width: 100%;
-  }
+.sectionactivitesMars article .groupephoto4 a .cadrephoto5 img {
+  left: -0%;
+  top: -0%;
+  width: 100%;
+}
 
-.sectionactivitesMars article .groupephoto4 a .cadrephoto6 img
-  {
-    left: -0%;
-    top:-15%;
-    width: 100%;
-  }
-
+.sectionactivitesMars article .groupephoto4 a .cadrephoto6 img {
+  left: -0%;
+  top: -15%;
+  width: 100%;
+}
 
 /*FOOTER*/
-
-.footer
-{
+.footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -777,21 +735,19 @@ header .logo img
   background-color: #F2F2F2;
 }
 
-.bloc_footer
-{
+.bloc_footer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   margin: 40px 0 45px 40px;
-  gap:10%;
+  gap: 10%;
   grid-row-gap: 30px;
 }
 
 .bloc_a_propos,
 .bloc_nos_hebergements,
-.bloc_assistance
-{
+.bloc_assistance {
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -799,549 +755,392 @@ header .logo img
 
 .bloc_a_propos h3,
 .bloc_nos_hebergements h3,
-.bloc_assistance h3
-{
-margin-bottom: 10px;
+.bloc_assistance h3 {
+  margin-bottom: 10px;
 }
 
 .bloc_a_propos a,
 .bloc_nos_hebergements a,
-.bloc_assistance a
-{
-margin-bottom: 7px;
-font-size: 0.9em;
+.bloc_assistance a {
+  margin-bottom: 7px;
+  font-size: 0.9em;
 }
-
-
-
-
-
-
-
 
 
 /*___________________________________MEDIA QUERY________________________________ */
 
 
 /*@media1 - Tèrs Grands écrans > 1580x*/
-  @media screen and (min-width: 1580px)
-   {
-      .photosmarseille .hotels .imghotel .centre
-      {height: 100%;max-height:160px;}
-      body
-      {
-        max-width: 1900px;
-      }
-      
-   }
-
-
-@media screen and (min-width: 768px) and (max-width: 1200px)
-{
-
-  .pop .btitreetphotopop .photospop .hotelspop 
-  {
-      height: 50%;
-      max-height: none;
-      margin: auto;
-      flex-direction: column;
+@media screen and (min-width: 1580px) {
+  .photosmarseille .hotels .imghotel .centre {
+    height: 100%;
+    max-height: 160px;
   }
 
-      .pop figure 
-  {
-      min-width: auto;
-      max-width: none;
-      height: 150px;
+  body {
+    max-width: 1900px;
   }
-
-  .photospop .hotelspop .centrepop 
-    {
-      border-radius: 1em 1em 0 0;
-    }
 
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1200px)
-  {
-    .sectionactivitesMars article .groupephoto4 
-      {
-        width: 100%;
-        flex-direction: row;
-        column-gap: 20px;
-      }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
-
-    .sectionactivitesMars article .groupephoto4 a .cadrephoto5,
-    .sectionactivitesMars article .groupephoto4 a .cadrephoto6
-    {
-  
-      height: 200px;
-    }
-
-    .sectionactivitesMars article 
-      {
-        justify-content: space-around;
-      }
+  .pop .btitreetphotopop .photospop .hotelspop {
+    height: 50%;
+    max-height: none;
+    margin: auto;
+    flex-direction: column;
   }
+
+  .pop figure {
+    min-width: auto;
+    max-width: none;
+    height: 150px;
+  }
+
+  .photospop .hotelspop .centrepop {
+    border-radius: 1em 1em 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .sectionactivitesMars article .groupephoto4 {
+    width: 100%;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .sectionactivitesMars article .groupephoto4 a .cadrephoto5,
+  .sectionactivitesMars article .groupephoto4 a .cadrephoto6 {
+
+    height: 200px;
+  }
+
+  .sectionactivitesMars article {
+    justify-content: space-around;
+  }
+}
 
 
 /*@media2 - Ecrans PC min 992px*/
-@media screen and (min-width: 992px)
-  {
-    body
-      {
-        margin: auto;
-      }
+@media screen and (min-width: 992px) {
+  body {
+    margin: auto;
   }
+}
 
 /*@media3 - Ecran tablettes entre 768 et 992px*/
-@media screen and (min-width: 768px) and (max-width: 992px)
-  {
-    body
-      {
-        margin: auto;
-      }  
-  
-    header .logo img
-    {
-      width:30%;
-    }
-    .marseille nav
-    {
-      justify-content: space-around;
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    margin: auto;
   }
+
+  header .logo img {
+    width: 30%;
+  }
+
+  .marseille nav {
+    justify-content: space-around;
+  }
+}
 
 /*@media3 - Ecran supérieur à 768px*/
-@media screen and (min-width: 768px)
-  {
-    .searchbutton .icosearch
-    {
-      display: none;
-    }
+@media screen and (min-width: 768px) {
+  .searchbutton .icosearch {
+    display: none;
   }
+}
 
 /*@media4 - Petits écrans (type mobile) < 768px*/
-  @media screen and (min-width: 0px) and (max-width: 768px)
-    {
-        body
-      {
-        margin: auto;
-      }
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    margin: auto;
+  }
 
-      .header
-      {
-        justify-content:space-between;
-        margin: 0 20px 40px 20px;
-      }
+  h1 {
+    font-size: 1.1em;
+    text-shadow: 0.3px 0.3px 1px;
+  }
 
-  .bLinkstd
-    {
-      box-sizing: border-box;
-      display: flex;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      top:80px;
-      left:0px;
-    }
+  .titrepage {
+    margin: 90px 20px 20px 20px;
+  }
 
-  .bLinkstd .LiStdLink1
-    {
-      width: 50%;
-      padding: 0;
-      margin-right:0;
-      border-bottom: 2px solid #0065fc;
-    }
-  .bLinkstd .LiStdLink2
-    {
-      width: 50%;
-      padding: 0;
-      margin-right:0;
-      border-bottom: 2px solid #F2F2F2;
-    }
+  .titrepage p {
+    font-size: 0.8em;
+  }
+
+  .header {
+    justify-content: space-between;
+    margin: 0 20px 40px 20px;
+  }
+
+  .bsingupLink {
+    font-size: 0.8em;
+  }
+
+  .bLinkstd {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+  }
+
+  .bLinkstd .LiStdLink1 {
+    width: 50%;
+    padding: 0;
+    margin-right: 0;
+    border-bottom: 3px solid #0065fc;
+  }
+
+  .bLinkstd .LiStdLink2 {
+    width: 50%;
+    padding: 0;
+    margin-right: 0;
+    border-bottom: 3px solid #F2F2F2;
+  }
 
   .bLinkstd .LiStdLink1 a,
-  .bLinkstd .LiStdLink2 a
-    {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding-bottom: 10px;
-    }
+  .bLinkstd .LiStdLink2 a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+  }
 
   .bLinkstd .LiStdLink1 a:active,
-  .bLinkstd .LiStdLink2 a:active
-    {
-      color:#0065fc;
-      border-bottom: 2px solid #0065fc;
-    }
+  .bLinkstd .LiStdLink2 a:active {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+  }
 
   .bLinkstd .LiStdLink1 a:visited,
-  .bLinkstd .LiStdLink2 a:visited
-    {
-      color:#0065fc;
-    }
+  .bLinkstd .LiStdLink2 a:visited {
+    color: #0065fc;
+  }
 
   .bLinkstd .LiStdLink1 a:focus,
-  .bLinkstd .LiStdLink2 a:focus
-    {
-      border-bottom: 2px solid #0065fc;
-    }
+  .bLinkstd .LiStdLink2 a:focus {
+    border-bottom: 2px solid #0065fc;
+  }
 
 
-    .bLinkstd .stdLink1
-      {
-        padding: 0;
-        margin: 0px;
-      }
+  .bLinkstd .stdLink1 {
+    padding: 0;
+    margin: 0px;
+  }
 
-    .bLinkstd .stdLink2
-      {
-        padding: 0;
-        margin: 0px;
-      }
+  .bLinkstd .stdLink2 {
+    padding: 0;
+    margin: 0px;
+  }
 
 
-    .navigation li a:after
-      {
-        content: "";
-      }
+  .navigation li a:after {
+    content: "";
+  }
 
-      .navigation li a:hover:after 
-      {
-        transform: scaleX(0);
-      }
+  .navigation li a:hover:after {
+    transform: scaleX(0);
+  }
 
-    header .logo img
-      {
-        align-items: flex-end;
-        width: 100px;
-      }
+  header .logo img {
+    align-items: flex-end;
+    width: 100px;
+  }
 
-    .titrepage    
-      {
-        margin:0px 10px 0 10px;
-      }
+  .search_filter {
+    margin: 0px 10px 0 10px;
+  }
 
-      .search_filter
-      {
-        margin:0px 10px 0 10px;
-      }
-      .searchspan
-      {
-        display: none;
-      }
+  .searchspan {
+    display: none;
+  }
 
-      .gbtns
-       {
-        margin: 0 0 0 0px;
-       }
+  .gbtns {
+    margin: 0 0 0 0px;
+  }
 
-    /*@media changement animation liens menu navigation*/
+  /*@media changement animation liens menu navigation*/
 
-    .navigation li a:active 
-      {
-      color: #0065fc;
-      }
+  .navigation li a:active {
+    color: #0065fc;
+  }
 
 
-      .marsetpop
-      {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-left: 0;
-        margin-right: 0;
-      }
-      .marsetpop .marseille
-      {
-        width: 100%;
-        margin-bottom: 20px;
-        justify-content: center;
-        align-items: center;
-      }
-      .marsetpop .marseille .btitreetphoto
-      {
-        display: flex;
-        fleection: column;
-      }
+  .marsetpop {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .marsetpop .marseille {
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .marsetpop .marseille .btitreetphoto {
+    display: flex;
+  }
+
+  .photosmarseille .hotels .centre {
+    min-width: 100px
+  }
+
+  .marseille .btitreetphoto .photosmarseille a {
+    width: 100%;
+  }
+
+  .marsetpop .marseille .btitreetphoto .imgpop {
+    display: flex;
+    justify-content: center;
+  }
 
 
+  .sectionactivitesMars {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: transparent;
+  }
 
-      .photosmarseille .hotels .centre
-      {
-        min-width: 100px
-      }
+  .sectionactivitesMars h1 {
+    margin-left: 2.5%;
+  }
 
-      .marseille .btitreetphoto .photosmarseille a
-      {
-        width: 100%;
-      }
-      .marsetpop .marseille .btitreetphoto .imgpop
-      {
-        display: flex;
-        justify-content: center;
-      }
+  .blocphotosactvitesMars {
+    flex-direction: column;
+    align-items: center;
+  }
 
-      
-      .sectionactivitesMars
-      {
-        width: 100%;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: transparent;
-      }
-      .sectionactivitesMars h1
-      {
-        margin-left: 2.5%;
-      }
+  .sectionactivitesMars article .groupephoto,
+  .sectionactivitesMars article .groupephoto2,
+  .sectionactivitesMars article .groupephoto3,
+  .sectionactivitesMars article .groupephoto4 {
+    width: 95%;
+  }
 
-      .blocphotosactvitesMars
-      {
-        flex-direction: column;
-        align-items: center;
-      }
+  .marseille {
+    background-color: transparent;
+  }
 
-      .sectionactivitesMars article .groupephoto,.sectionactivitesMars article .groupephoto2,.sectionactivitesMars article .groupephoto3,.sectionactivitesMars article .groupephoto4
-      {
-        width: 95%;
-      }
+  .pop {
+    padding-bottom: 30px;
+    border-radius: 0;
+    width: 100%;
+  }
 
-      .marseille
-      {
-        background-color: transparent;
-      }
+  .photospop .hotelspop .centrepop {
+    min-width: 50px;
+  }
 
-      .pop
-      {
-        padding-bottom: 30px;
-        border-radius: 0;
-        width: 100%;
-      }
-      .photospop .hotelspop .centrepop
-      {
-        min-width: 50px;
-      }
-
-      .pop .btitreetphotopop .photospop .hotelspop
-      {
-        box-shadow: 0px 1px 10px 5px rgba(0, 0, 0,.05);
-      }
-
-
-
-
- /*Reglage cardre photos activite Marseille*/
-      .sectionactivitesMars article .groupephoto4 a .cadrephoto6,
-      .sectionactivitesMars article .groupephoto4 a .cadrephoto5,
-      .sectionactivitesMars article .groupephoto3 a .cadrephoto4,
-      .sectionactivitesMars article .groupephoto2 a .cadrephoto3,
-      .sectionactivitesMars article .groupephoto2 a .cadrephoto2,
-      .sectionactivitesMars article .groupephoto a .cadrephoto1      
-      {
-          height: 200px;
-          width: 100%;
-      }
-
-
-
-/*Reglage Photo 1*/
-    .sectionactivitesMars article .groupephoto
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto .blocphoto1,
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto a .cadrephoto1 img 
-      {
-          position: relative;
-          left: -0%;
-          top: -0%;
-          object-fit: cover;
-          height: 300px;
-          border: 2px solid blue;
-          width: 100%;
-     }    
-
-/*Reglage Photo 2 et 3*/
-    .sectionactivitesMars article .groupephoto2
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto2 .blocphoto2,
-    .sectionactivitesMars article .groupephoto2 .blocphoto3
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto2 a .cadrephoto2 img 
-      {
-          position: relative;
-          left: -0%;
-          top: -0%;
-          object-fit: cover;
-          height: 300px;
-          border: 2px solid blue;
-          width: 100%;
-     }    
-    .sectionactivitesMars article .groupephoto2 a .cadrephoto3 img 
-      {
-          position: relative;
-          left: -0%;
-          top: -0%;
-          object-fit: cover;
-          height: 300px;
-          border: 2px solid blue;
-          width: 100%;
-     }
-
-/*Reglage Photo 4*/
-    .sectionactivitesMars article .groupephoto3
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto3 .blocphoto4,
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto3 a .cadrephoto4 img 
-      {
-          position: relative;
-          left: -0%;
-          top: -0%;
-          object-fit: cover;
-          height: 300px;
-          border: 2px solid blue;
-          width: 100%;
-     } 
-
-/*Reglage Photo 5 et 6*/
-    .sectionactivitesMars article .groupephoto4
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto4 .blocphoto6,
-    .sectionactivitesMars article .groupephoto4 .blocphoto5
-      {
-          height: auto;
-      }
-
-    .sectionactivitesMars article .groupephoto4 a .cadrephoto5 img 
-      {
-          position: relative;
-          left: -0%;
-          top: -0%;
-          object-fit: cover;
-          height: 300px;
-          border: 2px solid blue;
-          width: 100%;
-     }    
-    .sectionactivitesMars article .groupephoto4 a .cadrephoto6 img 
-      {
-          position: relative;
-          left: -0%;
-          top: -0%;
-          object-fit: cover;
-          height: 300px;
-          border: 2px solid blue;
-          width: 100%;
-     }
-
-      .bloc_footer
-      {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .bloc_a_propos,
-      .bloc_nos_hebergements,
-      .bloc_assistance
-      {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .bloc_a_propos h3,
-      .bloc_nos_hebergements h3,
-      .bloc_assistance h3
-        {
-        font-size: 1em;
-        }
-
-        .sectionactivitesMars
-        {
-          margin: 0;
-        }
-        .sectionactivitesMars .blocphotosactvitesMars
-        {
-          grid-row-gap: 30px;
-        }
-
-        .sectionactivitesMars .blocphotosactvitesMars .blocphoto2,
-        .sectionactivitesMars .blocphotosactvitesMars .blocphoto5,
-        .sectionactivitesMars .blocphotosactvitesMars .blocphoto6
-        {
-          margin-bottom: 30px;
-        }
-
+  .pop .btitreetphotopop .photospop .hotelspop {
+    box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, .05);
   }
 
 
 
-@media screen and (min-width: 0px) and (max-width: 500px)
-    {
-    
-          .marseille .btitreetphoto .photosmarseille .hotels
-      {
-        width: 100%;
-      }
 
-    }
+  /*Reglage cardre photos activite Marseille*/
+  .sectionactivitesMars article .groupephoto4 a .cadrephoto6,
+  .sectionactivitesMars article .groupephoto4 a .cadrephoto5,
+  .sectionactivitesMars article .groupephoto3 a .cadrephoto4,
+  .sectionactivitesMars article .groupephoto2 a .cadrephoto3,
+  .sectionactivitesMars article .groupephoto2 a .cadrephoto2,
+  .sectionactivitesMars article .groupephoto a .cadrephoto1 {
+    height: 200px;
+    width: 100%;
+  }
 
-@media screen and (max-width: 1340px)
-{
-  .marseille .btitreetphoto .photosmarseille .hotels 
-  {
-      min-width: 200px;
-      width: 40%;
+
+
+  /*Reglage Photo 1*/
+  .sectionactivitesMars article .groupephoto,
+  .sectionactivitesMars article .groupephoto2,
+  .sectionactivitesMars article .groupephoto3,
+  .sectionactivitesMars article .groupephoto4 {
+    height: auto;
+  }
+
+  .sectionactivitesMars article .groupephoto .blocphoto1,
+  .sectionactivitesMars article .groupephoto2 .blocphoto2,
+  .sectionactivitesMars article .groupephoto2 .blocphoto3,
+  .sectionactivitesMars article .groupephoto3 .blocphoto4,
+  .sectionactivitesMars article .groupephoto4 .blocphoto6,
+  .sectionactivitesMars article .groupephoto4 .blocphoto5 {
+    height: auto;
+  }
+
+
+
+  .sectionactivitesMars article .groupephoto4 a .cadrephoto6 img,
+  .sectionactivitesMars article .groupephoto4 a .cadrephoto5 img,
+  .sectionactivitesMars article .groupephoto3 a .cadrephoto4 img,
+  .sectionactivitesMars article .groupephoto2 a .cadrephoto3 img,
+  .sectionactivitesMars article .groupephoto2 a .cadrephoto2 img,
+  .sectionactivitesMars article .groupephoto a .cadrephoto1 img {
+    position: relative;
+    left: -0%;
+    top: -0%;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+
+  .bloc_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloc_a_propos,
+  .bloc_nos_hebergements,
+  .bloc_assistance {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bloc_a_propos h3,
+  .bloc_nos_hebergements h3,
+  .bloc_assistance h3 {
+    font-size: 1em;
+  }
+
+  .sectionactivitesMars {
+    margin: 0;
+  }
+
+  .sectionactivitesMars .blocphotosactvitesMars {
+    grid-row-gap: 30px;
+  }
+
+  .sectionactivitesMars .blocphotosactvitesMars .blocphoto2,
+  .sectionactivitesMars .blocphotosactvitesMars .blocphoto5,
+  .sectionactivitesMars .blocphotosactvitesMars .blocphoto6 {
+    margin-bottom: 30px;
+  }
 }
-  }
 
-  .marseille .btitreetphoto .photosmarseille .hotels figure 
-  {
-    height: 9em;
+
+@media screen and (max-width: 1340px) {
+  .marseille .btitreetphoto .photosmarseille .hotels {
     min-width: 200px;
+    width: 40%;
   }
-
 }
 
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .marseille .btitreetphoto .photosmarseille .hotels {
+    width: 100%;
+  }
+}
 
-
-
-
-
-/*BORDURE REPERE*/
-
-marsetpop{border : 3px solid red;}
-marsetpop .marseille{border:1px solid yellow;}
-marseille .btitreetphoto{border:1px solid red;}
-marseille nav{border:2px solid blue;}
-marseille nav .textimg{ border:1px solid yellow;}
-marseille cropimg{border: 1px red solid;}
-pop{border:2px solid green;}
-pop nav{border:2px solid blue;}
-pop nav .textimg{border:1px solid yellow;}
-pop cropimg1{border: 1px red solid;}
-pop cropimg2{border: 1px red solid;}
-pop cropimg3{border: 1px red solid;}
