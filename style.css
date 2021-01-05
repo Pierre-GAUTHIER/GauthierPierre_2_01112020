@@ -258,16 +258,12 @@ header .logo img {
 
 /*ZONE FILTRE*/
 
-.filtre
-
-/*section filtre*/
-  {
+.filtre {
   display: flex;
-
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 30px 0 30px 0;
+  margin: 30px 0 35px 0;
   width: 100%;
 }
 
@@ -350,7 +346,7 @@ header .logo img {
 }
 
 .filtre .info p {
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .filtre .info .fas {
@@ -393,7 +389,8 @@ header .logo img {
 .marseille .btitreetphoto {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
+  margin: 0 20px 0 20px;
 }
 
 .marseille .btitreetphoto .photosmarseille {
@@ -530,7 +527,7 @@ header .logo img {
   font-size: 0.8em;
   font-weight: bold;
   font-style: raleway, serif;
-  padding: 0;
+  padding: 0 10px 0 0;
   overflow: hidden;
   height: 25%;
   max-height: 160px;
@@ -816,6 +813,11 @@ header .logo img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .pop .btitreetphotopop .photospop .hotelspop {
+    padding: 0;
+  }
+
   .sectionactivitesMars article .groupephoto4 {
     width: 100%;
     flex-direction: row;
@@ -1056,6 +1058,10 @@ header .logo img {
     align-items: center;
   }
 
+  .marseille h2 {
+    margin-bottom: 0;
+  }
+
   .marsetpop .marseille .btitreetphoto {
     display: flex;
   }
@@ -1087,7 +1093,9 @@ header .logo img {
 
   .sectionactivitesMars h1 {
     margin-left: 2.5%;
+    margin-top: 0;
   }
+
 
   .blocphotosactvitesMars {
     flex-direction: column;
@@ -1098,7 +1106,9 @@ header .logo img {
   .sectionactivitesMars article .groupephoto2,
   .sectionactivitesMars article .groupephoto3,
   .sectionactivitesMars article .groupephoto4 {
-    width: 95%;
+    width: 100%;
+    margin-left:20px;
+    margin-right: 20px;
   }
 
   .marseille {
