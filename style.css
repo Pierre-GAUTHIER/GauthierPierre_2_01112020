@@ -72,7 +72,7 @@ a {
   color: black
 }
 
-figcaption {
+.h3_photo {
   font-family: raleway, serif;
   font-size: 0.9em;
   font-weight: bold
@@ -428,11 +428,11 @@ header .logo img {
 }
 
 /*Positionnement texte dans bloc photo Marseille*/
-.marseille .btitreetphoto .photosmarseille .hotels figcaption {
+.marseille .btitreetphoto .photosmarseille .hotels .h3_photo {
   margin-top: 10px;
 }
 
-.marseille .btitreetphoto .photosmarseille .hotels figcaption,
+.marseille .btitreetphoto .photosmarseille .hotels .h3_photo,
 .marseille .btitreetphoto .photosmarseille .hotels p,
 .marseille .btitreetphoto .photosmarseille .hotels .bstar {
   margin-left: 10px;
