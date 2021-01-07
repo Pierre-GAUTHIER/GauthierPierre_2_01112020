@@ -330,9 +330,9 @@ header .logo img {
   font-size: 1.3em;
 }
 
-.filtre .btn button h2 {
+.filtre .btn button .titre_boutton{
   margin: 0 10px 0 10px;
-  font-size: 1.2em;
+  font-size: 1.1rem;
 }
 
 .filtre .fas {
