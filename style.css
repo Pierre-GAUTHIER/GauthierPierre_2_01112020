@@ -1085,10 +1085,15 @@ header .logo img {
 
 
   .sectionactivitesMars {
-    width: 100%;
+    width: auto;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: transparent;
+    margin: 0 20px 0 20px;
+  }
+
+    .sectionactivitesMars article {
+    width: auto;
   }
 
   .sectionactivitesMars h1 {
@@ -1107,8 +1112,6 @@ header .logo img {
   .sectionactivitesMars article .groupephoto3,
   .sectionactivitesMars article .groupephoto4 {
     width: 100%;
-    margin-left:20px;
-    margin-right: 20px;
   }
 
   .marseille {
@@ -1195,9 +1198,6 @@ header .logo img {
     font-size: 1em;
   }
 
-  .sectionactivitesMars {
-    margin: 0;
-  }
 
   .sectionactivitesMars .blocphotosactvitesMars {
     grid-row-gap: 30px;
