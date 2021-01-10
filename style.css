@@ -697,7 +697,7 @@ header .logo img {
 .bloc_footer {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items:git  flex-start;
   width: 100%;
   margin: 45px 0 45px 40px;
   gap: 10%;
@@ -843,11 +843,17 @@ header .logo img {
   .marseille .btitreetphoto .photosmarseille .hotels {
     width: 40%;
   }
-
   .sectionactivitesMars .blocphotosactvitesMars {
     max-width: 350px;
   }
 }
+
+/*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 426-768px*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+.marsetpop .marseille .btitreetphoto {
+  align-items: center;
+  }
+} 
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 426-561px*/
 @media screen and (min-width: 426px) and (max-width: 561px) {
   .marseille .btitreetphoto .photosmarseille .hotels {
@@ -1026,7 +1032,7 @@ header .logo img {
 
   .marseille .btitreetphoto .photosmarseille .hotels {
     width: 100%;
-    max-width: 350px;
+    max-width: 370px;
   }
 
   .marseille .btitreetphoto .photosmarseille .hotels figure {
