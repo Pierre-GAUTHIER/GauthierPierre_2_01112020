@@ -1,78 +1,51 @@
-/* QUESTIONS OK
-- Doit-on utiliser les code pour les caractères spéciaux exemple : &eacute pour é?
-PAS BESOIN CAR code UTF-8 permet de prendre en charge les caractères spéciaux accentué MAIS RESTE UNE SECURITE SUPPLEMENTAIRE
-
-- Peut-on ajuster la largeur d'une div selon la largeur de son enfant?
-  (exemple : ajustement auto de la largeur du bloc .btitreetphoto 
-    à la largeur du bloc photo imgpop) 
-    NON  - MIS ON PEUT FAIRE divparent avec WIDTH=auto et WIDTH=xxxpx (fixée) pour la DIV enfant
--Peut-on utiliser les liens comme des div comme je l'ai fait pour 
-  que lien porte sur tout le contenu du cadre?
-  NON CAR SEMANTAIQUEMENT PAS BON( appliquer le lien à l'image)
-
-QUESTIONS RESTANTES
--Peut-on dupliquer les icone (comme la commande background-repeat)?
-- FAIRE EN SORTE QUE LES PHOTOS SE REDUISE DES CHAQUE COTES PROPRTIONNELEMENT?
-- Pas grave de laisser les photos s'adapter au cadre comme je l'ai fait
-doit--on bloquer les photos en taille?
-
--NOTES : les icones contenu dans les boutton sont comprimés dans la maquette mobile donnée
-, je n'ai pas souhaité reproduire cela car cela ne me paraît pas être un affichage cohérent
-
-*/
-
 /* CONFIG BODY */
 body {
   margin: 0 auto 0 auto;
-  border: 1px solid black;
   box-sizing: border-box;
   font-size: 20px;
   width: 100%;
 }
 
 /*Config générales police*/
-
 * {
   font-family: 'raleway', arial, serif;
 }
 
 /*TAILLES POLICE ECRAN INFERIEUR A 1200px*/
-  h1 {
-    font-size: 1.35rem;
-  }
+h1 {
+  font-size: 1.35rem;
+}
 
-  h2 {
-    font-size: 1.1rem;
-  }
+h2 {
+  font-size: 1.1rem;
+}
 
-  h3 {
-    font-size: 0.9rem;
-  }
+h3 {
+  font-size: 0.9rem;
+}
 
-  h4 {
-    font-size: 1rem;
-  }
+h4 {
+  font-size: 1rem;
+}
 
-  p {
-    font-size: 1rem;
-  }
+p {
+  font-size: 1rem;
+}
 
-  .marsetpop .photel {
-    font-size: 0.9rem;
-  }
+.marsetpop .photel {
+  font-size: 0.9rem;
+}
 
-  .filtre .info p {
-    font-size: 1.1rem;
-  }
+.filtre .info p {
+  font-size: 1.1rem;
+}
 
-  a {
-    text-decoration: none;
-    color: black
-  }
+a {
+  text-decoration: none;
+  color: black
+}
 
 /*HEADER*/
-
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -83,7 +56,7 @@ body {
 
 .logo {
   display: flex;
-  margin:0;
+  margin: 0;
 }
 
 header .logo img {
@@ -96,12 +69,11 @@ header .logo img {
 
 
 /*Menu navigation*/
-
 .navigation {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 .navigation .stdLink1,
@@ -111,8 +83,7 @@ header .logo img {
 
 
 /*Bloc liens Hébergements + Activités*/
-.bLinkstd
-  {
+.bLinkstd {
   display: flex;
 }
 
@@ -139,7 +110,7 @@ header .logo img {
   border-top: 3px solid #0065fc;
   width: 100%;
   position: absolute;
-  top: -49px;
+  top: -47px;
   left: 0;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out 0s;
@@ -204,7 +175,6 @@ header .logo img {
   height: 50px;
 }
 
-
 .searchbutton {
   display: flex;
   justify-content: center;
@@ -216,18 +186,16 @@ header .logo img {
   font-size: 1.2rem;
   height: 50px;
   width: auto;
-
 }
 
 .searchbutton:hover {
   cursor: pointer;
   color: #0065fc;
   font-weight: bold;
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
 }
 
 /*ZONE FILTRE*/
-
 .filtre {
   display: flex;
   flex-direction: column;
@@ -255,7 +223,7 @@ header .logo img {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0 0 15px 0;
-  column-gap : 10px;
+  column-gap: 10px;
   row-gap: 13px;
 }
 
@@ -335,7 +303,6 @@ header .logo img {
 }
 
 /*HEBERGEMENT MARSEILE ET POPULAIRE*/
-
 .marsetpop {
   display: flex;
   flex-wrap: wrap;
@@ -344,7 +311,6 @@ header .logo img {
 }
 
 /*PHOTOS marseille*/
-
 .marseille {
   display: flex;
   justify-content: center;
@@ -401,7 +367,6 @@ header .logo img {
 }
 
 /*Positionnement texte dans bloc photo Marseille*/
-
 .marseille .btitreetphoto .photosmarseille .hotels .h4_photo {
   margin-left: 10px;
   margin-bottom: 3px;
@@ -425,7 +390,6 @@ header .logo img {
   font-weight: normal;
 }
 
-
 .photosmarseille .hotels .centre {
   position: relative;
   height: 7.5rem;
@@ -434,8 +398,6 @@ header .logo img {
   min-width: 260px;
   margin: auto;
 }
-
-
 
 .photosmarseille .capimghotel {
   margin: 0.4em 0 0 0.7em;
@@ -458,7 +420,6 @@ header .logo img {
 }
 
 /*PHOTOS Populaires*/
-
 .pop {
   display: flex;
   justify-content: center;
@@ -480,7 +441,6 @@ header .logo img {
   justify-content: space-between;
   align-items: center;
 }
-
 
 .pop .btitreetphotopop {
   display: flex;
@@ -507,7 +467,6 @@ header .logo img {
 
 .bloc_texte_photos h4 {
   margin: 0 0 5px 0;
-
 }
 
 .pop .btitreetphotopop .photospop .hotelspop {
@@ -547,7 +506,6 @@ header .logo img {
   display: block;
 }
 
-
 .photospop .hotelspop .centrepop {
   min-height: 9rem;
   object-fit: cover;
@@ -583,9 +541,7 @@ header .logo img {
   margin: 10px 0 10px 15px;
 }
 
-
 /*ACTIVITES A MARSEILLE*/
-
 .sectionactivitesMars {
   display: flex;
   flex-direction: column;
@@ -625,7 +581,6 @@ header .logo img {
   grid-row-gap: 20px
 }
 
-
 .sectionactivitesMars article .groupephoto .blocphoto1,
 .sectionactivitesMars article .groupephoto2 .blocphoto2,
 .sectionactivitesMars article .groupephoto2 .blocphoto3,
@@ -647,7 +602,6 @@ header .logo img {
 .sectionactivitesMars article .groupephoto4 .blocphoto6 h3 {
   padding-left: 10px;
 }
-
 
 .sectionactivitesMars article .groupephoto a .cadrephoto1 {
   width: 100%;
@@ -685,7 +639,6 @@ header .logo img {
   overflow: hidden;
 }
 
-
 .sectionactivitesMars article .groupephoto a .cadrephoto1 img,
 .sectionactivitesMars article .groupephoto2 a .cadrephoto2 img,
 .sectionactivitesMars article .groupephoto2 a .cadrephoto3 img,
@@ -695,7 +648,6 @@ header .logo img {
   position: relative;
   object-fit: cover;
 }
-
 
 .sectionactivitesMars article .groupephoto a .cadrephoto1 img {
   left: -55%;
@@ -774,11 +726,9 @@ header .logo img {
   font-size: 0.9rem;
 }
 
-
 /*________________________________________________MEDIA QUERY_________________________________________________ */
 
-
-/*@media1 - Tèrs Grands écrans > 1580x*/
+/*REGLAGE ECRAN MIN-1580px*/
 @media screen and (min-width: 1580px) {
   .photosmarseille .hotels .imghotel .centre {
     height: 100%;
@@ -788,15 +738,31 @@ header .logo img {
   body {
     max-width: 1900px;
   }
-
 }
-
+/*REGLAGE ECRAN MIN-1200px*/
 @media screen and (min-width: 1200px) {
-.gbtns{
+  .gbtns {
     column-gap: 25px;
   }
 }
+/*REGLAGE ECRAN MIN-993px*/
+@media screen and (min-width: 992px) {
+  body {
+    margin: auto;
+  }
+}
+/*REGLAGE ECRAN MIN-769px*/
+@media screen and (min-width: 769px) {
+  .searchbutton .icosearch {
+    display: none;
+  }
 
+  .sectionactivitesMars article {
+    width: auto;
+  }
+}
+
+/*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-1200px*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
 
   .pop .btitreetphotopop .photospop .hotelspop {
@@ -832,14 +798,27 @@ header .logo img {
     justify-content: space-around;
   }
 
- .sectionactivitesMars article .groupephoto2 {
-  width:35%;
+  .sectionactivitesMars article .groupephoto2 {
+    width: 35%;
+  }
+}
+/*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 993-1200px*/
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .sectionactivitesMars article .btextphotopop {
+    margin: 15px 0 10px 20px;
+  }
 }
 
-}
-
-/*@media écran intermédiaire - 769px à 922px*/
+/*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-992px*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    margin: auto;
+  }
+
+  .marseille nav {
+    justify-content: space-around;
+  }
+  
   .marsetpop {
     flex-direction: column;
   }
@@ -857,65 +836,43 @@ header .logo img {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+}
+
+/*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 562-768px*/
+@media screen and (min-width: 562px) and (max-width: 768px) {
+  .marseille .btitreetphoto .photosmarseille .hotels {
+    width: 40%;
+  }
+
+  .sectionactivitesMars .blocphotosactvitesMars {
+    max-width: 350px;
+  }
+}
+/*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 426-561px*/
+@media screen and (min-width: 426px) and (max-width: 561px) {
+  .marseille .btitreetphoto .photosmarseille .hotels {
+    width: 100%;
+  }
+
+  .sectionactivitesMars {
+    align-items: center;
+  }
 
 }
 
-/*@media2 - Ecrans PC min 992px*/
-@media screen and (min-width: 992px) {
-  body {
-    margin: auto;
-  }
-}
-
-/*@media3 - Ecran tablettes entre 768 et 992px*/
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  body {
-    margin: auto;
-  }
-
-  header .logo img {
-    width: 30%;
-  }
-
-  .marseille nav {
-    justify-content: space-around;
-  }
-}
-
-
-/*@media3 - Ecran supérieur à 768px*/
-@media screen and (min-width: 769px) {
-  .searchbutton .icosearch {
-    display: none;
-  }
-
-  .sectionactivitesMars article {
-    width: auto;
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1199px) {
   .marseille .btitreetphoto .photosmarseille .hotels {
     width: 45%;
     min-width: 250px;
   }
 
-  .pop .btitreetphotopop .photospop .hotelspop{
+  .pop .btitreetphotopop .photospop .hotelspop {
     min-width: 200px;
   }
 
 }
 
-@media screen and (min-width: 993px)  and (max-width: 1200px) {
-  .sectionactivitesMars article .btextphotopop {
-  margin: 15px 0 10px 20px;
- }
-}
-
-/*@media4 - Petits écrans (type mobile) < 768px*/
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     min-width: 260px;
     margin: auto;
@@ -1047,17 +1004,17 @@ header .logo img {
 
   .marseille h1 {
     margin: 30px 0 20px 0;
-}
+  }
 
   .marseille h2 {
     margin-bottom: 0;
   }
-  
 
-  .marseille .btitreetphoto .photosmarseille{
+
+  .marseille .btitreetphoto .photosmarseille {
     row-gap: 0.6rem;
   }
-  
+
 
   .marsetpop .marseille .btitreetphoto {
     display: flex;
@@ -1141,7 +1098,7 @@ header .logo img {
 
   .pop figure {
     height: 8.5rem;
-}
+  }
 
   .photospop .hotelspop .centrepop {
     min-width: 50px;
@@ -1205,18 +1162,22 @@ header .logo img {
     top: -110%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto2 a .cadrephoto3 img {
     top: -10%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto3 a .cadrephoto4 img {
     top: -10%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto4 a .cadrephoto5 img {
     top: -10%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto4 a .cadrephoto6 img {
     top: -15%;
     left: 0%;
@@ -1253,30 +1214,13 @@ header .logo img {
   }
 }
 
-@media screen and (min-width: 562px) and (max-width: 768px) {
-  .marseille .btitreetphoto .photosmarseille .hotels {
-  width: 40%;
-  }
-
+@media screen and (max-width: 561px) {
   .sectionactivitesMars .blocphotosactvitesMars {
     max-width: 350px;
-}
-}
-
-
-@media screen and (min-width: 426px) and (max-width: 561px) {
-    .marseille .btitreetphoto .photosmarseille .hotels {
-      width: 100%;
-    }
-
-    .sectionactivitesMars {
-    align-items: center;
-    }
-
   }
+}
 
-@media screen and (min-width: 0px) and (max-width: 425px) {
-
+@media screen and (max-width: 425px) {
   .marseille .btitreetphoto .photosmarseille .hotels {
     width: 100%;
   }
@@ -1285,6 +1229,7 @@ header .logo img {
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   .sectionactivitesMars article .groupephoto a .cadrephoto1 img {
     top: -10%;
     left: 0%;
@@ -1294,18 +1239,22 @@ header .logo img {
     top: -110%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto2 a .cadrephoto3 img {
     top: -10%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto3 a .cadrephoto4 img {
     top: -10%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto4 a .cadrephoto5 img {
     top: -10%;
     left: 0%;
   }
+
   .sectionactivitesMars article .groupephoto4 a .cadrephoto6 img {
     top: -15%;
     left: 0%;
@@ -1313,51 +1262,43 @@ header .logo img {
 
 }
 
-@media screen and (min-width: 0px) and (max-width: 561px) {
-.sectionactivitesMars .blocphotosactvitesMars {
-  max-width: 350px;
-}
-}
-
-
-/*AUGMENTATION TAILLES POLICE ECRAN SUPERIEUR A 1200px (Uniquement pour les polices le nécessitant)*/
-
+/*AUGMENTATION TAILLES POLICE ECRAN SUPERIEUR A 1500px 
+(Uniquement pour certains éléments)*/
 @media screen and (min-width: 1500px) {
-
   h2 {
     font-size: 1.3rem;
   }
-  
+
   h3 {
     font-size: 1.1rem;
   }
-  
+
   h4 {
     font-size: 1.2rem;
   }
-  
+
   p {
     font-size: 1.2rem;
   }
-  
+
   .marsetpop .photel {
     font-size: 1.1rem;
   }
-  
+
   .filtre .info p {
     font-size: 1.3rem;
   }
-  
-  .filtre .btn button .titre_boutton{
+
+  .filtre .btn button .titre_boutton {
     font-size: 1.1rem;
   }
-  
+
   .bloc_a_propos h3,
   .bloc_nos_hebergements h3,
   .bloc_assistance h3 {
     font-size: 1.3rem;
   }
-  
+
   .bloc_a_propos a,
   .bloc_nos_hebergements a,
   .bloc_assistance a {
@@ -1366,6 +1307,6 @@ header .logo img {
 
   .navigation div a {
     font-size: 1.2rem;
-}
-  
   }
+
+}
