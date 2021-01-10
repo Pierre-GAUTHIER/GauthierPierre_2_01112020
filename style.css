@@ -67,7 +67,6 @@ header .logo img {
   cursor: pointer;
 }
 
-
 /*Menu navigation*/
 .navigation {
   display: flex;
@@ -80,7 +79,6 @@ header .logo img {
 .navigation .stdLink2 {
   margin-right: 50px;
 }
-
 
 /*Bloc liens Hébergements + Activités*/
 .bLinkstd {
@@ -119,7 +117,6 @@ header .logo img {
 .navigation div a:hover:after {
   transform: scaleX(1.5);
 }
-
 
 /*TITRE PAGE*/
 .titrepage {
@@ -752,7 +749,7 @@ header .logo img {
 }
 
 /*REGLAGE ECRAN MIN-993px*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   body {
     margin: auto;
   }
@@ -768,8 +765,6 @@ header .logo img {
     width: auto;
   }
 }
-
-
 
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-1200px*/
 @media screen and (min-width: 769px) and (max-width: 1344px) {
@@ -813,7 +808,7 @@ header .logo img {
 }
 
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 993-1200px*/
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1199px) {
   .sectionactivitesMars article .btextphotopop {
     margin: 15px 0 10px 20px;
   }
@@ -825,7 +820,6 @@ header .logo img {
   .pop .btitreetphotopop .photospop .hotelspop .photelpop {
     margin: 0 0 5px 0;
   }
-
 }
 
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-992px*/
@@ -851,7 +845,6 @@ header .logo img {
     margin-top: 20px;
   }
 
-
   .pop .btitreetphotopop .photospop {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -867,7 +860,14 @@ header .logo img {
   .sectionactivitesMars .blocphotosactvitesMars {
     max-width: 350px;
   }
+}
 
+
+@media screen and (min-width: 426px) and (max-width: 992px) {
+  .pop h2 {
+    margin: 40px auto 25px auto;
+    width: 300px;
+  }
 }
 
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 426-768px*/
@@ -890,9 +890,7 @@ header .logo img {
   .sectionactivitesMars {
     align-items: center;
   }
-
 }
-
 
 @media screen and (max-width: 1344px) {
   .marseille .btitreetphoto .photosmarseille .hotels {
@@ -904,13 +902,6 @@ header .logo img {
 @media screen and (max-width: 1199px) {
   .pop .btitreetphotopop .photospop .hotelspop {
     min-width: 200px;
-  }
-}
-
-@media screen and (min-width: 425px) and (max-width: 992px) {
-  .pop h2 {
-    margin: 40px auto 25px auto;
-    width: 300px;
   }
 }
 
@@ -929,8 +920,6 @@ header .logo img {
     align-items: center;
     margin: 20px 20px 40px 20px;
   }
-
-
 
   .bLinkstd {
     box-sizing: border-box;
