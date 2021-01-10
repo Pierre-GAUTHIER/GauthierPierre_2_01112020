@@ -1040,6 +1040,7 @@ header .logo img {
   .marseille h2 {
     margin-bottom: 0;
   }
+  
 
   .marseille .btitreetphoto .photosmarseille{
     row-gap: 0.6rem;
@@ -1061,6 +1062,14 @@ header .logo img {
 
   .marseille .btitreetphoto .photosmarseille .hotels figure {
     height: 7rem;
+  }
+
+  .marseille .btitreetphoto .photosmarseille .hotels {
+    width: 100%;
+  }
+
+  .marseille .btitreetphoto .photosmarseille .hotels figure {
+    height: 7.5rem;
   }
 
   .photosmarseille .hotels .centre {
