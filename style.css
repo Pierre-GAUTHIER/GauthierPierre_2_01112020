@@ -30,45 +30,45 @@ body {
   width: 100%;
 }
 
-/*Config générales police / décoration texte*/
+/*Config générales police*/
 
 * {
   font-family: 'raleway', arial, serif;
 }
 
-h1 {
-  font-size: 1.4rem;
-}
+/*TAILLES POLICE ECRAN INFERIEUR A 1200px*/
+  h1 {
+    font-size: 1.35rem;
+  }
 
-h2 {
-  font-size: 1.1rem;
-}
+  h2 {
+    font-size: 1.1rem;
+  }
 
-h3 {
-  font-size: 0.9rem;
-}
+  h3 {
+    font-size: 0.9rem;
+  }
 
-h4 {
-  font-size: 1rem;
-}
+  h4 {
+    font-size: 1rem;
+  }
 
-p {
-  font-size: 1rem;
-}
+  p {
+    font-size: 1rem;
+  }
 
-.marsetpop .photel {
-  font-size: 0.9rem;
-}
+  .marsetpop .photel {
+    font-size: 0.9rem;
+  }
 
-.filtre .info p {
-  font-size: 1.1rem;
-}
+  .filtre .info p {
+    font-size: 1.1rem;
+  }
 
-a {
-  text-decoration: none;
-  color: black
-}
-
+  a {
+    text-decoration: none;
+    color: black
+  }
 
 /*HEADER*/
 
@@ -78,12 +78,12 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   margin: auto;
-  margin: 0 60px 0 60px;
+  margin: 45px 60px 0 60px;
 }
 
 .logo {
   display: flex;
-  margin: 25px 0 0 0;
+  margin:0;
 }
 
 header .logo img {
@@ -101,7 +101,7 @@ header .logo img {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  margin: 40px 0 0 0;
+  margin:0;
 }
 
 .navigation .stdLink1,
@@ -139,7 +139,7 @@ header .logo img {
   border-top: 3px solid #0065fc;
   width: 100%;
   position: absolute;
-  top: -40px;
+  top: -49px;
   left: 0;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out 0s;
@@ -472,7 +472,7 @@ header .logo img {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 25px 0;
 }
 
 .pop h1 span {
@@ -775,7 +775,7 @@ header .logo img {
 }
 
 
-/*___________________________________MEDIA QUERY________________________________ */
+/*________________________________________________MEDIA QUERY_________________________________________________ */
 
 
 /*@media1 - Tèrs Grands écrans > 1580x*/
@@ -789,6 +789,12 @@ header .logo img {
     max-width: 1900px;
   }
 
+}
+
+@media screen and (min-width: 1200px) {
+.gbtns{
+    column-gap: 25px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -825,6 +831,10 @@ header .logo img {
   .sectionactivitesMars article {
     justify-content: space-around;
   }
+
+ .sectionactivitesMars article .groupephoto2 {
+  width:35%;
+}
 
 }
 
@@ -904,7 +914,6 @@ header .logo img {
  }
 }
 
-
 /*@media4 - Petits écrans (type mobile) < 768px*/
 @media screen and (min-width: 0px) and (max-width: 768px) {
   body {
@@ -918,8 +927,11 @@ header .logo img {
 
   .header {
     justify-content: space-between;
-    margin: 0 20px 40px 20px;
+    align-items: center;
+    margin: 20px 20px 40px 20px;
   }
+
+
 
   .bLinkstd {
     box-sizing: border-box;
@@ -1306,3 +1318,54 @@ header .logo img {
   max-width: 350px;
 }
 }
+
+
+/*AUGMENTATION TAILLES POLICE ECRAN SUPERIEUR A 1200px (Uniquement pour les polices le nécessitant)*/
+
+@media screen and (min-width: 1500px) {
+
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  .marsetpop .photel {
+    font-size: 1.1rem;
+  }
+  
+  .filtre .info p {
+    font-size: 1.3rem;
+  }
+  
+  .filtre .btn button .titre_boutton{
+    font-size: 1.1rem;
+  }
+  
+  .bloc_a_propos h3,
+  .bloc_nos_hebergements h3,
+  .bloc_assistance h3 {
+    font-size: 1.3rem;
+  }
+  
+  .bloc_a_propos a,
+  .bloc_nos_hebergements a,
+  .bloc_assistance a {
+    font-size: 1.2rem;
+  }
+
+  .navigation div a {
+    font-size: 1.2rem;
+}
+  
+  }
