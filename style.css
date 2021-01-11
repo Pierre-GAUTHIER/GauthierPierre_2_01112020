@@ -777,6 +777,16 @@ header .logo img {
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-1200px*/
 @media screen and (min-width: 769px) and (max-width: 1344px) {
 
+  .sectionactivitesMars article .groupephoto,
+  .sectionactivitesMars article .groupephoto3 {
+    width: 33%;
+  }
+}
+
+
+/*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-1200px*/
+@media screen and (min-width: 769px) and (max-width: 1344px) {
+
   .pop .btitreetphotopop .photospop .hotelspop {
     height: auto;
     max-height: none;
@@ -811,7 +821,7 @@ header .logo img {
   }
 
   .sectionactivitesMars article .groupephoto2 {
-    width: 35%;
+    width: 28%;
   }
 }
 
