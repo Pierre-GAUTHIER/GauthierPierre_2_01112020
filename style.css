@@ -185,8 +185,10 @@ header .logo img {
   border-style: none;
   padding: 0 1.5em;
   font-size: 1.2rem;
-  height: 50px;
+  height: 48px;
   width: auto;
+  border: 1px solid #0065fc;
+  border-radius: 0.8rem;
 }
 
 .searchbutton:hover {
@@ -706,7 +708,7 @@ header .logo img {
 .bloc_footer {
   display: flex;
   justify-content: flex-start;
-  align-items: git flex-start;
+  align-items: flex-start;
   width: 100%;
   margin: 45px 0 45px 40px;
   gap: 10%;
@@ -1030,8 +1032,10 @@ header .logo img {
 
   .searchbutton {
     width: 50px;
-    border-radius: 0.7em;
-  }
+    height: 48px;
+    border-radius: 0.8rem;
+    border: 1px solid #0065fc;
+}
 
   .filtre .info {
     align-items: baseline;
