@@ -108,7 +108,7 @@ header .logo img {
   border-top: 3px solid #0065fc;
   width: 100%;
   position: absolute;
-  top: -47px;
+  top: -49px;
   left: 0;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out 0s;
@@ -739,8 +739,8 @@ header .logo img {
 
 /*________________________________________________MEDIA QUERY_________________________________________________ */
 
-/*REGLAGE ECRAN MIN-1580px*/
-@media screen and (min-width: 1580px) {
+/*REGLAGE ECRAN MIN-1500px*/
+@media screen and (min-width: 1500px) {
   .photosmarseille .hotels .imghotel .centre {
     height: 100%;
     max-height: 160px;
@@ -748,6 +748,10 @@ header .logo img {
 
   body {
     max-width: 1900px;
+  }
+
+  .navigation {
+    margin-top : 3px;
   }
 }
 
@@ -939,6 +943,10 @@ header .logo img {
     justify-content: space-between;
     align-items: center;
     margin: 20px 20px 40px 20px;
+  }
+
+  .navigation {
+    margin-top : 0px;
   }
 
   .bLinkstd {
