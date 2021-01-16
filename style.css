@@ -196,6 +196,7 @@ header .logo img {
   color: #0065fc;
   font-weight: bold;
   background-color: #F2F2F2;
+  border: 1px solid #D9D9D9;
 }
 
 /*ZONE FILTRE*/
@@ -257,7 +258,7 @@ header .logo img {
 
   background-color: #F2F2F2;
   color: #0065fc;
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .filtre .btn i {
@@ -446,7 +447,7 @@ header .logo img {
   display: flex;
   width: auto;
   justify-content: space-between;
-  margin: 40px 20px 25px 20px;
+  margin: 40px 40px 25px 40px;
   max-width: 500px;
 }
 
@@ -463,7 +464,7 @@ header .logo img {
   align-items: center;
   flex-wrap: wrap;
   width: auto;
-  margin: 0px 20px 20px 20px;
+  margin: 0px 40px 20px 40px;
 }
 
 .pop .btitreetphotopop .photospop {
@@ -494,7 +495,7 @@ header .logo img {
   overflow: hidden;
   height: 25%;
   max-height: 150px;
-  min-width: 280px;
+  width:100%;
   margin: auto;
   background-color: white;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
@@ -506,16 +507,16 @@ header .logo img {
 
 
 .pop .btitreetphotopop .photospop .hotelspop .photelpop {
-  margin: 0;
+  margin: 0 0 5px 0;
   font-size: 0.9rem;
 }
 
 .pop .btitreetphotopop .photospop .hotelspop .capimghotelpop {
-  margin: 0 0 10px 0;
+  margin: 0 0 3px 0;
 }
 
 .pop figure {
-  min-width: 40%;
+  min-width: 50%;
   max-width: 50%;
   margin: 0;
   display: block;
@@ -783,23 +784,13 @@ header .logo img {
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-1200px*/
 @media screen and (min-width: 769px) and (max-width: 1344px) {
 
-  .sectionactivitesMars article .groupephoto,
-  .sectionactivitesMars article .groupephoto3 {
-    width: 33%;
-  }
+
 }
 
 
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 769-1200px*/
 @media screen and (min-width: 769px) and (max-width: 1344px) {
-
-  .pop .btitreetphotopop .photospop .hotelspop {
-    height: auto;
-    max-height: none;
-    margin: auto;
-    flex-direction: column;
-  }
-
+ 
   .pop figure {
     min-width: 50%;
     max-width: 100%;
@@ -807,6 +798,10 @@ header .logo img {
   }
 
   .pop .btitreetphotopop .photospop .hotelspop {
+    height: auto;
+    max-height: none;
+    margin: auto;
+    flex-direction: column;
     padding: 0;
   }
 
@@ -814,6 +809,15 @@ header .logo img {
     width: 100%;
     flex-direction: row;
     column-gap: 20px;
+  }
+
+  .sectionactivitesMars article .groupephoto,
+  .sectionactivitesMars article .groupephoto3 {
+    width: 33%;
+  }
+
+  .sectionactivitesMars article .groupephoto2 {
+    width: 28%;
   }
 
   .sectionactivitesMars article .groupephoto4 a .cadrephoto5,
@@ -826,9 +830,6 @@ header .logo img {
     justify-content: space-around;
   }
 
-  .sectionactivitesMars article .groupephoto2 {
-    width: 28%;
-  }
 }
 
 /*REGLAGE SPECIFIQUE FOURCHETTE TAILLE ECRANS INTERMEDIAIRE 993-1200px*/
@@ -921,13 +922,12 @@ header .logo img {
     width: 45%;
     min-width: 250px;
   }
-}
 
-@media screen and (max-width: 1199px) {
-  .pop .btitreetphotopop .photospop .hotelspop {
-    min-width: 200px;
+  .pop .btitreetphotopop {
+    margin-right: 20px;
+    margin-left: 20px;
+    }
   }
-}
 
 @media screen and (max-width: 768px) {
   body {
@@ -1090,13 +1090,9 @@ header .logo img {
     width: 100%;
   }
 
-  .marseille .btitreetphoto .photosmarseille .hotels figure {
-    height: 7.5rem;
-  }
-
   .photosmarseille .hotels .centre {
     min-width: 100px;
-    height: 7rem;
+    height: 7.2rem;
   }
 
   .marseille .btitreetphoto .photosmarseille a {
@@ -1157,6 +1153,7 @@ header .logo img {
   .pop .btitreetphotopop .photospop .hotelspop {
     box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, .05);
     max-width: 500px;
+    width:100%;
   }
 
   /*Reglage cardre photos activite Marseille*/
@@ -1288,6 +1285,11 @@ header .logo img {
     margin: 0 15px 0 15px;
     font-size: 1rem;
   }
+
+  .pop h2 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1344,10 +1346,6 @@ header .logo img {
 /*AUGMENTATION TAILLES POLICE ECRAN SUPERIEUR A 1500px 
 (Uniquement pour certains éléments)*/
 @media screen and (min-width: 1500px) {
-  h2 {
-    font-size: 1.3rem;
-  }
-
   h3 {
     font-size: 1.1rem;
   }
